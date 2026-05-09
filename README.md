@@ -14,6 +14,7 @@ Each top-level directory is organized as a reusable project package with its own
 | `devrev-tools-rag` | Retrieval augmented generation for tool/document workflows |
 | `digifab` | Digital fabrication CAD, media, and project deliverables |
 | `far-field-speaker-recognition` | Speaker recognition archive |
+| `isro-moon-mapping` | Moon super-resolution for the ISRO problem statement, Inter IIT Tech Meet 11.0 |
 | `learning-management-system` | Full-stack learning management system |
 | `lucas` | Compiler and lexer project assets |
 | `MA4240` | Course project material and experiments |

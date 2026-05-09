@@ -10,6 +10,7 @@ Each top-level directory is organized as a reusable project package with its own
 | --- | --- |
 | `adversaries-in-ir` | Information retrieval and adversarial program analysis |
 | `bosch-age-gender` | Age/gender recognition and video inference |
+| `convolutions-big-picture` | Paper unifying convolutions across probability, signal processing, statistical mechanics, and information theory |
 | `dbms2` | Database systems parser and C++ experiments |
 | `devrev-tools-rag` | Retrieval augmented generation for tool/document workflows |
 | `digifab` | Digital fabrication CAD, media, and project deliverables |
@@ -23,6 +24,7 @@ Each top-level directory is organized as a reusable project package with its own
 | `mphasis-quantum-flight-scheduling` | Quantum-inspired flight scheduling analysis |
 | `neuro-GMM` | Neuro-inspired Gaussian mixture model experiments |
 | `neuroai` | NeuroAI archive material |
+| `quantum-random-walks` | Quantum random walks as the quantum counterpart of Markov chains |
 | `quantum-spherical-kmeans` | Quantum spherical k-means experiments |
 | `quantum-vrp` | Quantum vehicle routing archive |
 | `segmentation-lidar` | LiDAR segmentation and DeepLab2 experiments |

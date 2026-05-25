@@ -97,3 +97,11 @@ User with Teacher role will have access to the following functionalities
 **How to use:** Use the client package.json for frontend setup and the backend project files for the server-side build.
 
 **Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.
+
+## Current Layout
+
+- `backend/` - C++/Drogon LMS backend.
+- `frontend/` - Angular LMS client.
+- `prototypes/static-html/` - original static UI prototypes.
+- `docs/generated/` - generated backend/API documentation.
+

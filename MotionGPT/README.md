@@ -481,3 +481,12 @@ Thanks to [Motion-latent-diffusion](https://github.com/ChenFengYe/motion-latent-
 This code is distributed under an [MIT LICENSE](LICENSE).
 
 Note that our code depends on other libraries, including SMPL, SMPL-X, PyTorch3D, and uses datasets which each have their own respective licenses that must also be followed.
+## Repository Notes
+
+**Project type:** Machine learning research code
+
+**Summary:** Motion-language generation research code with training, testing, rendering, and model utilities.
+
+**How to use:** Install requirements.txt or setup.py dependencies, then use train.py, test.py, demo.py, or render.py.
+
+**Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.

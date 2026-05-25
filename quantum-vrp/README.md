@@ -1,16 +1,23 @@
 # Quantum VRP
 
-Quantum vehicle routing poster archive.
+Poster archive for a quantum vehicle-routing project. No runnable implementation was available in the imported folder.
 
-## Repository Notes
+## Conceptual Workflow
 
-**Project type:** Poster archive
+```mermaid
+flowchart LR
+    A[Vehicle routing instance] --> B[QUBO / quantum-inspired formulation]
+    B --> C[Solver or sampler]
+    C --> D[Route assignment]
+    D --> E[Poster results]
+```
 
-**How to use:** Code is not available in this folder; review Quantum_VRP_Poster.pdf.
+## Repository Layout
 
-**Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders where available. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.
+| Path | Purpose |
+| --- | --- |
+| `docs/Quantum_VRP_Poster.pdf` | Project poster. |
 
-## Current Layout
+## How To Use
 
-- `docs/` - quantum VRP poster. No implementation code was available in the source folder.
-
+Open the poster in `docs/` to review the problem formulation and project summary. This folder is intentionally documentation-only.

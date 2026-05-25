@@ -1,28 +1,38 @@
-# DigiFab_Project
-Why am I the only one without an acad excellence award here????? :(
+# DigiFab Planetarium Mechanism
 
+Digital fabrication archive for a mechanical planetarium-style assembly. The repository contains Solid Edge CAD parts, STL inspiration/reference files, rendered images, demonstration media, presentation decks, and zipped submission bundles.
 
-Contributers:
-1) VikhyaTH (Tomper)
-2) Tanmay Garg (no he does not own garg opticals)
-3) Anirudh (the good boi)
-4) Ojjas (not Ojas)
-5) Aman (somehow mr.elan...)
-## Repository Notes
+## Fabrication Workflow
 
-**Project type:** Fabrication archive
+```mermaid
+flowchart LR
+    A[Reference STL / mechanism inspiration] --> B[CAD part modeling]
+    B --> C[Assembly design]
+    C --> D[STL / print deliverables]
+    C --> E[Rendered images and demo media]
+    D --> F[Submission bundle]
+    E --> G[Presentation decks]
+```
 
-**Summary:** Digital fabrication project deliverables, CAD parts, STL assets, presentations, and media.
+## Repository Layout
 
-**How to use:** No code build is required; open the CAD, STL, PDF, and presentation assets with their respective tools.
+| Path | Purpose |
+| --- | --- |
+| `assets/cad-project/` | Solid Edge parts, assemblies, configurations, and planet models. |
+| `assets/inspiration-files/` | Reference STL/OpenSCAD files used for inspiration. |
+| `deliverables/` | Zipped parts and STL/print bundles. |
+| `docs/presentations/` | Project presentation decks. |
+| `media/images/` | Tray and estimate images. |
+| `media/videos/` | Assembly GIF/video demos. |
 
-**Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.
+## How To Use
 
-## Current Layout
+Open `.par`, `.asm`, and `.cfg` files with Solid Edge or a compatible CAD tool. Use the ZIP files in `deliverables/` for packaged submission assets, and use `docs/presentations/` for the final project narrative.
 
-- `assets/cad-project/` - Solid Edge CAD parts and assemblies.
-- `assets/inspiration-files/` - reference STL and inspiration assets.
-- `docs/presentations/` - project decks.
-- `media/images/` and `media/videos/` - renders, photos, and demos.
-- `deliverables/` - zipped submission bundles.
+## Contributors
 
+- Vikhyath
+- Tanmay Garg
+- Anirudh
+- Ojjas
+- Aman

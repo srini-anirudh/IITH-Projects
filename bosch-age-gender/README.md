@@ -1,48 +1,78 @@
-## Inter IIT Tech Meet : BOSCH PS 
+# Bosch Age and Gender Detection
 
-Bosch Age and Gender Detection.
+Computer-vision prototype for detecting people in CCTV/video frames and estimating age and gender from face/body crops. The code combines YOLOv5 person detection, MTCNN face detection, OpenCV DNN age/gender classifiers, and a body-to-gender fallback model.
 
-## Requirements (Versions used)
+## Pipeline Diagram
 
-Pytorch - version 1.11.0  
-Tensorflow - version 2.8.0  
-Opencv-python - version 4.5.1.48  
-Opencv-contrib-python - version 4.5.1.48  
-Numpy - version 1.22.3  
-Python - version 3.8.8  
-mtcnn - version 0.1.1
+```mermaid
+flowchart LR
+    A[Input video] --> B[Frame sampler]
+    B --> C[YOLOv5 person detector]
+    C --> D[Person crops]
+    D --> E{Face found?}
+    E -->|Yes| F[MTCNN face crop]
+    F --> G[OpenCV age/gender DNNs]
+    E -->|No| H[Body-to-gender model]
+    G --> I[Frame-level CSV record]
+    H --> I
+    I --> J[outputs/Outputs.csv]
+```
 
+## Repository Layout
 
-## Steps to be followed
+| Path | Purpose |
+| --- | --- |
+| `src/bosch_age_gender/` | Inference and video utility scripts. |
+| `notebooks/` | Original Inter-IIT exploratory notebook. |
+| `models/` | Retained checkpoint and expected location for Caffe/body2gender model files. |
+| `media/samples/` | Sample videos used by demos. |
+| `outputs/` | Runtime CSV output directory, ignored by Git. |
 
-### To simulate the environment  
+## Requirements
+
+The original environment used:
+
+- Python 3.8.8
+- PyTorch 1.11.0
+- TensorFlow 2.8.0
+- OpenCV 4.5.1.48
+- NumPy 1.22.3
+- `mtcnn` 0.1.1
+
+Install from the pinned dependency file:
+
 ```bash
+cd bosch-age-gender
+python -m venv .venv
+.venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-1. In the main folder run the following command in the terminal.
+## Usage
+
+Run the main inference script from the project root:
+
 ```bash
-python3 test_inter.py --file="<path to the video file>" --fr_rate=<some positive integer>
+$env:PYTHONPATH = "src"
+python -m bosch_age_gender.infer_age_gender --file "media/samples/reservation.mp4" --fr_rate 5
 ```
-2. To adjust sample rate in the video adjust the fr_rate parameter  
-	E.g. fr_rate = 5 means every 5th frame will be used to predict persons, (can be used when the frame rate of original video is very high, we recommend a frame sample rate of 5-10 frames per second).
-	
-3. The output is a csv file generated named 'Outputs.csv'
-## Repository Notes
 
-**Project type:** Computer vision application
+`--fr_rate` controls frame sampling. For example, `--fr_rate 5` processes every fifth frame. Results are written to `outputs/Outputs.csv`.
 
-**Summary:** Age and gender recognition experiments with inference scripts, notebooks, sample media, and a retained checkpoint artifact.
+## Model Artifacts
 
-**How to use:** Install Python dependencies from requirements.txt and run the inference scripts against the included sample media.
+The script expects these model files under `models/` when running the full age/gender path:
 
-**Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.
+- `age_deploy.prototxt`
+- `age_net.caffemodel`
+- `gender_deploy.prototxt`
+- `dump.caffemodel`
+- `body2gen/model.h5`
 
-## Current Layout
+Only artifacts present in the source folder were committed. Add missing model files locally before running the full pipeline.
 
-- `src/bosch_age_gender/` - reusable Python inference and video utility scripts.
-- `notebooks/` - exploratory Inter-IIT notebook.
-- `models/` - retained model/checkpoint artifacts and expected location for Caffe/body2gender models.
-- `media/samples/` - sample videos used by demos.
-- `outputs/` - generated CSV outputs at runtime; ignored by Git.
+## Utility Scripts
 
+- `capture.py` displays the sample video with OpenCV.
+- `yolo_video_batch.py` batches frames through YOLOv5 for person detection analysis.
+- `person_crop_demo.py` visualizes person crops and bounding boxes.

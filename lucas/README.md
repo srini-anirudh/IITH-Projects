@@ -1,55 +1,54 @@
-# compilers-2-project-team-3-aug22
-compilers-2-project-team-3-aug22 created by GitHub Classroom
+# Lucas Compiler Project
 
-# 1 Introduction
-## 1.1 About the Language
-”Lucas - Programming made simple” is a compiled, statically typed, object
-based language with calculus features and support for arbitrary precision integers as its USP. It draws inspiration from some of the popular languages like
-C++, Go, COOL, LaTeX and many more.
+Lucas is a compiled, statically typed, object-based language designed for programmers who need calculus-oriented features and arbitrary-precision integers in a simple academic language. This repository contains the language specification, ANTLR lexer/parser grammars, test cases, documentation, and final presentation material.
 
-## 1.2 Why Lucas?
-The need for our language is because of the unique combination of features that
-we support. We have designed this language for mathematicians, academicians,
-scientists, business analysts and for anyone who might need calculus support.
-The idea behind our language is to keep all relevant features bundled so that
-it’s easy for the programmer to get the computational details that he needs, all
-at one place instead of depending on multiple languages in a technological stack.
-We are planning to start with a support for calculus functionalities that can
-evaluate accurately the differentials at a point and integrals over an interval with
-certain level of user-defined precision level. We’ll add upon relevant packages
-for differential equations and anymore related functionalities in our next release
-based on the feedback from the user community.
+## Compiler Front-End Diagram
 
-## 1.3 Design Goals
-We want to make life easier for the programmer, so our focus is on bringing
-a balance between productivity and performance. Based on the use cases we
-could imagine of, we decided to go with an object based language that supports
-data encapsulation features. The idea of having begin and end with labels for
-any block of code comes from LaTeX, which majority of the users, (mostly
-mathematicians) are already familiar with. And also, dangling if-else problem
-can be taken care of, with the help of proper labelling. Also, we support multiple
-return types that can returned from a function. The programmer doesn’t need to
-encapsulate the return values into a single structure before returning it from the
-function. Arbitrary precision integers are represented as the new non-primitive
-datatype bigint that the language supports. We support 32-bit int data type
-as well, which can be used if the programmer has the domain knowledge that
-the variables are going to be within the range supported for normal integers.
-And necessary exceptions will be thrown, whenever the compiler feels that there
-might be a chance of overflows or if int might not be suitable for the operation.
-## Repository Notes
+```mermaid
+flowchart LR
+    A[Lucas source file] --> B[ANTLR lexer grammar]
+    B --> C[Token stream]
+    C --> D[ANTLR parser grammar]
+    D --> E[Parse tree]
+    E --> F[Sample outputs and validation]
+```
 
-**Project type:** Compiler project
+## Repository Layout
 
-**Summary:** Compiler/lexer project materials, implementation notes, presentations, and demo media.
+| Path | Purpose |
+| --- | --- |
+| `src/lexer/` | Lexer grammar, makefile, test cases, ANTLR jar, and lexer documentation. |
+| `src/parser/` | Parser grammar, makefile, parser test cases, and sample parse-tree outputs. |
+| `docs/` | Language specification. |
+| `media/final-presentation-and-video/` | Final report, deck, language document, and demo video. |
 
-**How to use:** Start with the Lexer folder and documentation to rebuild or inspect the implementation.
+## Language Highlights
 
-**Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.
+- Statically typed and object based.
+- Block labels inspired by LaTeX-style `begin`/`end` structure.
+- Arbitrary precision integer type (`bigint`).
+- Multiple return values.
+- Calculus-oriented design goals for differentials, integrals, and future math packages.
 
-## Current Layout
+## Build / Run
 
-- `src/lexer/` - Lucas lexer grammar, makefile, tests, and implementation notes.
-- `src/parser/` - parser grammar, makefile, tests, and sample outputs.
-- `docs/` - language specification.
-- `media/final-presentation-and-video/` - final reports, deck, and demo media.
+Each front-end stage keeps its own makefile. Start with the lexer, then parser.
 
+```bash
+cd lucas/src/lexer
+make
+```
+
+```bash
+cd lucas/src/parser
+make
+```
+
+The ANTLR runtime jar is retained in each source folder for reproducibility with the original project setup.
+
+## Documentation
+
+- `docs/Team-3_language_specification.pdf`
+- `src/lexer/documentation/The Lucas Lexer.pdf`
+- `src/parser/Documentation/The Lucas Parser.pdf`
+- `media/final-presentation-and-video/Team 3 - Final Report.pdf`

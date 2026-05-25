@@ -1,16 +1,33 @@
 # Segmentation LiDAR
 
-LiDAR segmentation experiments based on DeepLab2, including demo notebooks and test data.
+LiDAR and scene-segmentation experiments based on the DeepLab2 research codebase. The upstream-style `deeplab2/` tree is intentionally kept intact so imports, configs, demo notebooks, evaluation utilities, and test data continue to work together.
 
-## Repository Notes
+## Pipeline Diagram
 
-**Project type:** Computer vision research code
+```mermaid
+flowchart LR
+    A[Image / LiDAR-style input] --> B[DeepLab2 config]
+    B --> C[Model builder]
+    C --> D[Trainer or evaluator]
+    D --> E[Semantic / panoptic predictions]
+    E --> F[Metrics and visualization]
+```
 
-**How to use:** Start from segmentation-lidar/deeplab2/README.md and the demo notebooks.
+## Repository Layout
 
-**Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders where available. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.
+| Path | Purpose |
+| --- | --- |
+| `deeplab2/` | Main DeepLab2 code, configs, demos, trainer, evaluator, model code, and test data. |
+| `deeplab2/DeepLab_Cityscapes_Demo.ipynb` | Cityscapes demo notebook. |
+| `deeplab2/ViP_DeepLab_Demo.ipynb` | ViP-DeepLab demo notebook. |
+| `deeplab2/evaluation/` | Evaluation code and test data. |
+| `deeplab2/trainer/` | Training/evaluation runners. |
 
-## Current Layout
+## Getting Started
 
-- `deeplab2/` - upstream-style DeepLab2 research code, configs, demos, evaluation code, and test data kept together to preserve internal imports.
+Start from the upstream README at `deeplab2/README.md`. It contains the dependency and dataset assumptions for the DeepLab2 codebase.
 
+## Notes
+
+- This project was not aggressively repackaged because DeepLab2 uses package-relative imports and many internal paths.
+- Generated caches and nested Git metadata were removed, but research-code layout was preserved.

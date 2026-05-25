@@ -2,7 +2,7 @@
 
 This repository collects project work from IITH courses, hackathons, research explorations, and engineering prototypes.
 
-Each top-level directory is organized as a reusable project package with its own README, dependencies, source code, notebooks, reports, datasets, or design assets where available. Code-heavy projects use conventional folders such as `src/`, `backend/`, `frontend/`, `notebooks/`, `data/`, `docs/`, `assets/`, and `media/`. Projects that only have reports or lightweight notes are retained as archive-style folders and clearly separated from code repositories.
+Each top-level directory is organized as a reusable project package with its own README, dependencies, source code, notebooks, reports, datasets, or design assets where available. Code-heavy projects use conventional folders such as `src/`, `backend/`, `frontend/`, `notebooks/`, `data/`, `docs/`, `assets/`, and `media/`. READMEs include Mermaid diagrams for projects with a real system architecture, model pipeline, data workflow, or conceptual flow to explain.
 
 ## Projects
 
@@ -36,4 +36,4 @@ Each top-level directory is organized as a reusable project package with its own
 
 ## Working With A Project
 
-Open the project directory and start with its local `README.md`. Most code projects keep dependencies in standard files such as `requirements.txt`, `pyproject.toml`, `package.json`, `setup.py`, or CMake/Drogon configuration files. When code was moved, the README's `Current Layout` section documents the new locations.
+Open the project directory and start with its local `README.md`. Most code projects keep dependencies in standard files such as `requirements.txt`, `pyproject.toml`, `package.json`, `setup.py`, or CMake/Drogon configuration files. When code was moved, the README documents the current layout and expected runtime paths.

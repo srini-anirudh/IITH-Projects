@@ -1,16 +1,23 @@
-# NeuroAI
+# NeuroAI Survey
 
-Neuromorphic AI survey archive.
+Archive for a neuromorphic AI survey paper. No implementation code was available in the imported folder.
 
-## Repository Notes
+## Topic Map
 
-**Project type:** Report archive
+```mermaid
+flowchart LR
+    A[NeuroAI] --> B[Neuromorphic hardware]
+    A --> C[Brain-inspired learning]
+    A --> D[Spiking neural networks]
+    A --> E[Energy-efficient AI]
+```
 
-**How to use:** Code is not available in this folder; review neuromorphic_AI_survey.pdf.
+## Repository Layout
 
-**Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders where available. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.
+| Path | Purpose |
+| --- | --- |
+| `docs/neuromorphic_AI_survey.pdf` | Survey paper. |
 
-## Current Layout
+## How To Use
 
-- `docs/` - neuromorphic AI survey paper. No implementation code was available in the source folder.
-
+Read the PDF in `docs/` for the survey content. This folder is intentionally documentation-only.

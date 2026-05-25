@@ -1,65 +1,72 @@
-# Student Message Board - Group 38
+# Student Message Board
 
-## Code Organization
+A StackOverflow-style student question-and-answer board with a Flutter frontend, Node.js/Express backend, and PostgreSQL database. Users can search posts, filter by tags/users, create and edit posts/comments, and view user-specific activity.
 
-The code is organized into three folders: **backend**, **frontend** and **database**.
+## System Diagram
 
-### backend
-This folder contains the Javascript files used to integrate the frontend of the application with the PostgreSQL database server. There are two files of interest:
-
-1. **index.js**: This file is used to set up the routes, as well as their type of requests from the API to the database tier.
-
-2. **queries.js**: This file contains the database queries for each route specified in **index.js**. It takes inputs from HTTP request bodies and parameters, and outputs database query results as JSON rows.
-
-### frontend
-
-The Dart code in this folder seems to be a lot heavier, however only a few files and subdirectories are important:
-
-1. **pubspec.yaml**: This is a YAML (_Yet Another Markup Language_) file, which contains all the imported packages used in the Dart code in the **lib** folder.
-2. **lib**: This is the subdirectory containing the code for the frontend of the application. There are many subdirectories inside **lib**. 
-   1. **pages**: This subdirectory contains Dart source files for each page of the application. 
-   2. **views**: This subdirectory contains various widgets and themes that are imported into Dart files in the **pages** subdirectory. 
-   3. **models**: This subdirectory contains the definition and attributes of the various models used in this application.
-   4. **services**: This subdirectory contains the middleware of the application. In particular, it contains all the API calls made from the frontend to the backend URLs.
-
-    The **main.dart** file in this directory contains the **main** function which runs the application.
-
-## Setup
-
-There are two stages to setting up the application to run, given that the database is already created and populated.
-
-### backend
-
-In a terminal window, type the following from the root directory:
-
-```
-$ cd backend
-$ npm i
-$ npm run server
+```mermaid
+flowchart LR
+    U[Browser / Flutter web user] --> F[Flutter frontend]
+    F --> S[API service layer]
+    S -->|HTTP JSON| B[Express backend]
+    B --> Q[queries.js]
+    Q --> D[(PostgreSQL)]
 ```
 
-This will start the Node.js server to handle database requests.
+## Data Model
 
-### frontend
+```mermaid
+erDiagram
+    USERS ||--o{ POSTS : owns
+    USERS ||--o{ COMMENTS : writes
+    POSTS ||--o{ COMMENTS : has
+    POSTS ||--o{ POST_LINKS : relates
+    POSTS ||--o{ POST_HISTORY : changes
+    POSTS ||--o{ VOTES : receives
+    USERS ||--o{ BADGES : earns
+    TAGS ||--o{ POSTS : labels
+```
 
-1. In Chrome/Chromium based browsers, install the [Dart Debug Extension](https://chrome.google.com/webstore/detail/dart-debug-extension/eljbmlghnomdjgdjmbdekegdkbabckhm).
-2. In VS Code, install the [Flutter extension](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter). 
-3. Open **frontend/lib/main.dart** in VS Code and run in debug mode on a webserver. This will render the web application on the browser.
-4. Click the Dart Debug icon when asked, to complete the rendering and view the application.
-## Repository Notes
+## Repository Layout
 
-**Project type:** Web application
+| Path | Purpose |
+| --- | --- |
+| `src/backend/` | Express server and PostgreSQL query handlers. |
+| `src/frontend/` | Flutter frontend source. |
+| `src/database/` | PostgreSQL DDL. |
+| `docs/` | SRS and project documentation. |
 
-**Summary:** Student message board web application with backend and frontend project assets.
+## Backend Setup
 
-**How to use:** Use Codes/backend/package.json for backend setup and the frontend folder for client assets.
+Create the PostgreSQL database and apply `src/database/postgresql_ddl.sql`. Then update database credentials in `src/backend/queries.js`.
 
-**Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.
+```bash
+cd student-message-board/src/backend
+npm install
+node index.js
+```
 
-## Current Layout
+The backend listens on port `3000`.
 
-- `src/backend/` - Node.js backend service.
-- `src/frontend/` - Flutter frontend application.
-- `src/database/` - PostgreSQL schema.
-- `docs/` - SRS and supporting documentation.
+## Frontend Setup
 
+Open `src/frontend/lib/main.dart` in a Flutter-enabled editor and run the web target, or use the Flutter CLI from `src/frontend` if the project metadata is present in your local copy.
+
+## API Summary
+
+| Method | Path | Purpose |
+| --- | --- | --- |
+| `POST` | `/users/login` | Username/password-style login check. |
+| `GET` | `/users` and `/users/:id` | List or fetch users. |
+| `GET` | `/post/:id` | Fetch a post. |
+| `GET` | `/post/:id/comments` | Fetch comments for a post. |
+| `POST` | `/postsearch` | Search posts by tags, user, sorting, and pagination. |
+| `POST` | `/tagsearch` | Autocomplete tags. |
+| `POST` | `/usersearch` | Autocomplete users. |
+| `PUT` | `/updatepost` | Create or update a post. |
+| `PUT` | `/updatecomment` | Create or update a comment. |
+
+## Notes
+
+- The current backend uses hard-coded local database credentials. Move those values into environment variables before deploying.
+- `getAllQuestions` currently builds part of its SQL dynamically; parameterize it before using this in a production environment.

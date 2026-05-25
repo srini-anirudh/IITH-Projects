@@ -1,16 +1,24 @@
-# Far Field Speaker Recognition
+# Far-Field Speaker Recognition
 
-Speaker-recognition report and presentation archive.
+Report archive for a far-field speaker-recognition project. Source code was not available in the imported folder, so this directory preserves the technical report and slide deck.
 
-## Repository Notes
+## Conceptual System
 
-**Project type:** Report archive
+```mermaid
+flowchart LR
+    A[Far-field audio] --> B[Preprocessing / enhancement]
+    B --> C[Feature extraction]
+    C --> D[Speaker model]
+    D --> E[Speaker identity / verification score]
+```
 
-**How to use:** Code is not available in this folder; review slides.pdf and technical_report.pdf.
+## Repository Layout
 
-**Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders where available. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.
+| Path | Purpose |
+| --- | --- |
+| `docs/technical_report.pdf` | Main technical report. |
+| `docs/slides.pdf` | Presentation slide deck. |
 
-## Current Layout
+## How To Use
 
-- `docs/` - report and slide deck. No implementation code was available in the source folder.
-
+Open the PDFs in `docs/` to review the methodology and results. No runnable implementation was present in the source material.

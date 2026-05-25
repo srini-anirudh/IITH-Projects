@@ -1,20 +1,42 @@
 # MA4240 Applied Statistics
 
-Applied statistics analysis, LaTeX reports, notebook figures, plots, and survey data.
+Applied statistics project analyzing meal-skipping behavior among IITH students. The repository keeps the survey data, plotting code, generated figures, notebooks, and LaTeX reports together so the analysis can be reviewed or regenerated.
 
-## Repository Notes
+## Analysis Workflow
 
-**Project type:** Statistics project
+```mermaid
+flowchart LR
+    A[Survey CSV] --> B[Python plotting script]
+    A --> C[Exploratory notebook]
+    B --> D[Figures]
+    C --> D
+    D --> E[LaTeX report]
+    E --> F[Compiled PDFs]
+```
 
-**How to use:** Run plots.py or the notebook to regenerate visualizations, then build the LaTeX reports if needed.
+## Repository Layout
 
-**Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders where available. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.
+| Path | Purpose |
+| --- | --- |
+| `data/` | Survey dataset. |
+| `src/plots.py` | Plot-generation script. |
+| `notebooks/` | Notebook used for exploratory figure generation. |
+| `figures/` | Generated plots used in reports. |
+| `docs/reports/` | LaTeX sources and compiled PDFs. |
 
-## Current Layout
+## Reproducing Figures
 
-- `src/` - plotting and analysis scripts.
-- `notebooks/` - figure-generation notebook.
-- `data/` - survey dataset.
-- `figures/` - generated charts.
-- `docs/reports/` - LaTeX reports and compiled PDFs.
+```bash
+cd MA4240
+python src/plots.py
+```
 
+The script expects the survey CSV in `data/`. Generated figures should be written to, or copied into, `figures/`.
+
+## Reports
+
+- `docs/reports/main.tex`
+- `docs/reports/main_report.tex`
+- `docs/reports/stats_presentation.tex`
+
+Build the LaTeX files with your preferred TeX distribution if you need to regenerate the PDFs.

@@ -1,22 +1,59 @@
-# QuantumOp
+# Mphasis Quantum Flight Scheduling
 
-Inter-IIT 2023 MidPrep PS Hosted by [Mphasis Foundation](https://www.mphasis.com/home.html).
+Inter-IIT 2023 mid-preparation project for quantum-inspired flight scheduling. The repository combines dataset parsing, scoring helpers, linear/integer programming experiments, DQM formulation notes, notebooks, and a frontend prototype.
 
-Read the problem statement [here](https://drive.google.com/file/d/1Ppkx6Iz7R2zpg1qSGHCDRIupKZ-0LBpM/view).
-## Repository Notes
+## System Diagram
 
-**Project type:** Optimization prototype
+```mermaid
+flowchart LR
+    A[Inventory, booking, passenger, schedule CSVs] --> B[Score/data helpers]
+    B --> C[Constraint modeling]
+    C --> D[LP / DQM solvers]
+    D --> E[Assignment and schedule outputs]
+    E --> F[Notebook analysis]
+    E --> G[Frontend prototype]
+```
 
-**Summary:** Quantum-inspired flight scheduling notebooks, score data, frontend prototype, and analysis outputs.
+## Repository Layout
 
-**How to use:** Use the notebooks for analysis and frontend/package.json for the UI prototype.
+| Path | Purpose |
+| --- | --- |
+| `src/` | Optimization scripts, DQM constraints, and mail/helper utilities. |
+| `data/scores/` | CSV inputs, data descriptions, rules, and scoring helper classes. |
+| `notebooks/` | Exploratory and final notebooks. |
+| `lp/` | Linear-programming notes and generated PDF/TeX artifacts. |
+| `backend/` | Backend prototype assets. |
+| `frontend/` | UI prototype. |
 
-**Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.
+## Data Inputs
 
-## Current Layout
+Primary inputs live in `data/scores/Data/`:
 
-- `src/` - optimization, DQM, and mail/helper scripts.
-- `notebooks/` - exploratory and final notebooks.
-- `data/scores/` - scoring data and dataset helpers.
-- `backend/`, `frontend/`, and `lp/` - app and linear-programming components retained as separate modules.
+- `Inventory.csv`
+- `PNR_Booking.csv`
+- `PNR_Passenger.csv`
+- `Schedule.csv`
+- `Rule_Set_List.pdf`
+- `Data_Description.pdf`
 
+## Running Analysis
+
+Use a Python environment with the optimization/data libraries required by the script or notebook you are running.
+
+```bash
+cd mphasis-quantum-flight-scheduling
+python src/lp.py
+python src/dqm_constraints.py
+```
+
+For reproducible exploration, start from `notebooks/final.ipynb` or `notebooks/final_r.ipynb`.
+
+## Frontend Prototype
+
+```bash
+cd mphasis-quantum-flight-scheduling/frontend
+npm install
+npm run dev
+```
+
+Check `frontend/package.json` for the exact scripts supported by the prototype.

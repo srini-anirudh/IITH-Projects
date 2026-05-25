@@ -481,21 +481,53 @@ Thanks to [Motion-latent-diffusion](https://github.com/ChenFengYe/motion-latent-
 This code is distributed under an [MIT LICENSE](LICENSE).
 
 Note that our code depends on other libraries, including SMPL, SMPL-X, PyTorch3D, and uses datasets which each have their own respective licenses that must also be followed.
-## Repository Notes
+## Local Repository Guide
 
-**Project type:** Machine learning research code
+This copy is organized as a reusable research-code repository inside the IITH projects monorepo. The upstream MotionGPT README above is preserved for model details, datasets, training stages, rendering, and citation information.
 
-**Summary:** Motion-language generation research code with training, testing, rendering, and model utilities.
+### Architecture Diagram
 
-**How to use:** Install requirements.txt or setup.py dependencies, then use train.py, test.py, demo.py, or render.py.
+```mermaid
+flowchart LR
+    A[Text prompt or motion sequence] --> B[Dataset and preprocessing code]
+    B --> C[Motion tokenizer / VQ stage]
+    C --> D[Motion token sequence]
+    D --> E[MotionGPT language model]
+    E --> F{Task}
+    F --> G[Text-to-motion]
+    F --> H[Motion captioning]
+    F --> I[Motion prediction]
+    F --> J[Motion in-between]
+    G --> K[Render / export utilities]
+    H --> K
+    I --> K
+    J --> K
+```
 
-**Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.
+### Repository Layout
 
-## Current Layout
+| Path | Purpose |
+| --- | --- |
+| `mGPT/` | Core package: architectures, configs, datasets, rendering, metrics, models, and utilities. |
+| `configs/` | Training, evaluation, demo, asset, and render configs. |
+| `prepare/` | Dataset/model preparation helpers and download scripts. |
+| `scripts/` | Motion-code extraction, visualization, FBX/SMPL utilities, and conversion scripts. |
+| `demos/` | Example prompts and demo inputs. |
+| `assets/` | README images and static assets. |
+| `train.py`, `test.py`, `demo.py`, `render.py`, `app.py` | Main entrypoints. |
 
-- `mGPT/` - core MotionGPT package.
-- `configs/` - training and evaluation configuration files.
-- `scripts/` and `prepare/` - data conversion and preparation utilities.
-- `demos/` and root entrypoints - demo, train, test, render, and app scripts.
-- `assets/` - static media and project assets.
+### Common Commands
+
+```bash
+cd MotionGPT
+pip install -r requirements.txt
+python demo.py --cfg ./configs/config_h3d_stage3.yaml --example ./demos/t2m.txt
+python -m train --cfg configs/config_h3d_stage1.yaml --nodebug
+python -m test --cfg configs/config_h3d_stage3.yaml --task t2m
+```
+
+### Notes
+
+- Large datasets, SMPL assets, T5 assets, and pretrained checkpoints are expected to be downloaded separately through the scripts in `prepare/`.
+- Keep generated checkpoints, render outputs, and downloaded model artifacts out of Git unless they are intentionally small release assets.
 

@@ -1,1 +1,1 @@
-python main.py --contour_plot --random_state 1
+PYTHONPATH=src python -m quantum_spherical_kmeans.main --contour_plot --random_state 1

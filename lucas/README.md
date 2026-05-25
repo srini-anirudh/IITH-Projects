@@ -36,3 +36,12 @@ as well, which can be used if the programmer has the domain knowledge that
 the variables are going to be within the range supported for normal integers.
 And necessary exceptions will be thrown, whenever the compiler feels that there
 might be a chance of overflows or if int might not be suitable for the operation.
+## Repository Notes
+
+**Project type:** Compiler project
+
+**Summary:** Compiler/lexer project materials, implementation notes, presentations, and demo media.
+
+**How to use:** Start with the Lexer folder and documentation to rebuild or inspect the implementation.
+
+**Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.

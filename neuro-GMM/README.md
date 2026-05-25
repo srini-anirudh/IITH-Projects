@@ -71,3 +71,10 @@ The following people have contributed to this project:
 **How to use:** Install requirements.txt, then run scripts under code/scripts or notebooks under code/notebooks.
 
 **Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.
+
+## Current Layout
+
+- `src/neuro_gmm/` - NGMM/FIGM implementations.
+- `notebooks/` - experiment notebooks.
+- `docs/` - reports and project documentation.
+

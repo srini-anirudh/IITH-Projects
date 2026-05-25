@@ -55,3 +55,11 @@ This will start the Node.js server to handle database requests.
 **How to use:** Use Codes/backend/package.json for backend setup and the frontend folder for client assets.
 
 **Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.
+
+## Current Layout
+
+- `src/backend/` - Node.js backend service.
+- `src/frontend/` - Flutter frontend application.
+- `src/database/` - PostgreSQL schema.
+- `docs/` - SRS and supporting documentation.
+

@@ -46,3 +46,12 @@ This will start the Node.js server to handle database requests.
 2. In VS Code, install the [Flutter extension](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter). 
 3. Open **frontend/lib/main.dart** in VS Code and run in debug mode on a webserver. This will render the web application on the browser.
 4. Click the Dart Debug icon when asked, to complete the rendering and view the application.
+## Repository Notes
+
+**Project type:** Web application
+
+**Summary:** Student message board web application with backend and frontend project assets.
+
+**How to use:** Use Codes/backend/package.json for backend setup and the frontend folder for client assets.
+
+**Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.

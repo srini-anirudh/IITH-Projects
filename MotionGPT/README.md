@@ -490,3 +490,12 @@ Note that our code depends on other libraries, including SMPL, SMPL-X, PyTorch3D
 **How to use:** Install requirements.txt or setup.py dependencies, then use train.py, test.py, demo.py, or render.py.
 
 **Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.
+
+## Current Layout
+
+- `mGPT/` - core MotionGPT package.
+- `configs/` - training and evaluation configuration files.
+- `scripts/` and `prepare/` - data conversion and preparation utilities.
+- `demos/` and root entrypoints - demo, train, test, render, and app scripts.
+- `assets/` - static media and project assets.
+

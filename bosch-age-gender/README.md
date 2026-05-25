@@ -28,3 +28,12 @@ python3 test_inter.py --file="<path to the video file>" --fr_rate=<some positive
 	E.g. fr_rate = 5 means every 5th frame will be used to predict persons, (can be used when the frame rate of original video is very high, we recommend a frame sample rate of 5-10 frames per second).
 	
 3. The output is a csv file generated named 'Outputs.csv'
+## Repository Notes
+
+**Project type:** Computer vision application
+
+**Summary:** Age and gender recognition experiments with inference scripts, notebooks, sample media, and a retained checkpoint artifact.
+
+**How to use:** Install Python dependencies from requirements.txt and run the inference scripts against the included sample media.
+
+**Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.

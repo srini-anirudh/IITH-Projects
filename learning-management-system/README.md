@@ -88,3 +88,12 @@ User with Teacher role will have access to the following functionalities
 	ii. Facility to create new assignment and upload necessary files. For pre-assigned assignments, facility to evaluate student’s response
 	iii. Facility to create new quiz database with answer key and time limit
 	iv.  Facility to enter and release grade for completed courses
+## Repository Notes
+
+**Project type:** Full-stack web application
+
+**Summary:** Full-stack LMS prototype with frontend client, static HTML mockups, backend sources, and generated documentation assets.
+
+**How to use:** Use the client package.json for frontend setup and the backend project files for the server-side build.
+
+**Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.

@@ -26,6 +26,7 @@ flowchart LR
 | `notebooks/` | Original Inter-IIT exploratory notebook. |
 | `models/` | Retained checkpoint and expected location for Caffe/body2gender model files. |
 | `media/samples/` | Sample videos used by demos. |
+| `docs/` | Project slide deck and supporting documentation. |
 | `outputs/` | Runtime CSV output directory, ignored by Git. |
 
 ## Requirements

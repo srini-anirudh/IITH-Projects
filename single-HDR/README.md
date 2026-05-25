@@ -72,4 +72,13 @@ CUDA_VISIBLEDEVICES=0 python3 test_real_refinement.py --ckpt_path ckpt_deq_lin_h
 ```
 
 ## Acknowledgment
-Parts of the code in ```hallucination_net.py``` are folked from [HDRCNN](https://github.com/gabrieleilertsen/hdrcnn). 
+Parts of the code in ```hallucination_net.py``` are folked from [HDRCNN](https://github.com/gabrieleilertsen/hdrcnn).
+## Repository Notes
+
+**Project type:** Computer vision research code
+
+**Summary:** Single-image HDR reconstruction assets, training code, pretrained curve data, and report material.
+
+**How to use:** Use training_code/README.md and run the Python training/inference scripts from that folder.
+
+**Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.

@@ -17,5 +17,12 @@ This repository is meant to serve as a submission to the Sentiforge hackathon co
 5. make .env file
 ## About the Project
 This system offers user empowerment through the ability to express opinions and access reviews, emphasizes ease of use with NextAuth and autocomplete features, provides data-driven insights using machine learning, and promotes community building among movie enthusiasts.
+## Repository Notes
 
+**Project type:** Full-stack ML web application
 
+**Summary:** Movie review platform with backend services, frontend app, sentiment analysis, summarization, scraping, and EDA modules.
+
+**How to use:** Use backend/pyproject.toml for the API, frontend/package.json for the UI, and ML module READMEs for model utilities.
+
+**Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.

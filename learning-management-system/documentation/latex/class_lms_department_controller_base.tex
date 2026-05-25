@@ -1,0 +1,74 @@
+\hypertarget{class_lms_department_controller_base}{}\doxysection{Lms\+Department\+Controller\+Base Class Reference}
+\label{class_lms_department_controller_base}\index{LmsDepartmentControllerBase@{LmsDepartmentControllerBase}}
+
+
+This class is a restful API controller for reading and writing the department table.  
+
+
+
+
+{\ttfamily \#include $<$Lms\+Department\+Controller\+Base.\+h$>$}
+
+Inheritance diagram for Lms\+Department\+Controller\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_lms_department_controller_base}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_lms_department_controller_base_a2dc8de8e733cee8b7241edbdef406a86}{get\+One}} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback, Department\+::\+Primary\+Key\+Type \&\&id)
+\item 
+\mbox{\Hypertarget{class_lms_department_controller_base_ae55bacc083ff27a289d528da962265b2}\label{class_lms_department_controller_base_ae55bacc083ff27a289d528da962265b2}} 
+void {\bfseries update\+One} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback, Department\+::\+Primary\+Key\+Type \&\&id)
+\item 
+\mbox{\Hypertarget{class_lms_department_controller_base_a6cd6c1d3c2d6b4de19eb6faf2b381914}\label{class_lms_department_controller_base_a6cd6c1d3c2d6b4de19eb6faf2b381914}} 
+void {\bfseries delete\+One} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback, Department\+::\+Primary\+Key\+Type \&\&id)
+\item 
+\mbox{\Hypertarget{class_lms_department_controller_base_a4cd2722526e5f1269af94681892041f8}\label{class_lms_department_controller_base_a4cd2722526e5f1269af94681892041f8}} 
+void {\bfseries get} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback)
+\item 
+\mbox{\Hypertarget{class_lms_department_controller_base_a4dad8df84cdd2c12dbe9c7510e3d3b7e}\label{class_lms_department_controller_base_a4dad8df84cdd2c12dbe9c7510e3d3b7e}} 
+void {\bfseries create} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback)
+\item 
+\mbox{\Hypertarget{class_lms_department_controller_base_abe24bcbe3810bc12781f6ec8e792a5c9}\label{class_lms_department_controller_base_abe24bcbe3810bc12781f6ec8e792a5c9}} 
+orm\+::\+Db\+Client\+Ptr {\bfseries get\+Db\+Client} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lms_department_controller_base_acaff269ee3fab56a8cdd70fd967f7447}{Lms\+Department\+Controller\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Ensure that subclasses inherited from this class are instantiated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_lms_department_controller_base_a2eb3fd33d10fef47f8d4fe4fce7a011e}\label{class_lms_department_controller_base_a2eb3fd33d10fef47f8d4fe4fce7a011e}} 
+const std\+::string {\bfseries db\+Client\+Name\+\_\+} \{\char`\"{}mysql\+\_\+client\char`\"{}\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is a restful API controller for reading and writing the department table. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_lms_department_controller_base_acaff269ee3fab56a8cdd70fd967f7447}\label{class_lms_department_controller_base_acaff269ee3fab56a8cdd70fd967f7447}} 
+\index{LmsDepartmentControllerBase@{LmsDepartmentControllerBase}!LmsDepartmentControllerBase@{LmsDepartmentControllerBase}}
+\index{LmsDepartmentControllerBase@{LmsDepartmentControllerBase}!LmsDepartmentControllerBase@{LmsDepartmentControllerBase}}
+\doxysubsubsection{\texorpdfstring{LmsDepartmentControllerBase()}{LmsDepartmentControllerBase()}}
+{\footnotesize\ttfamily Lms\+Department\+Controller\+Base\+::\+Lms\+Department\+Controller\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Ensure that subclasses inherited from this class are instantiated. 
+
+The items in the vector are aliases of column names in the table. if one item is set to an empty string, the related column is not sent to clients.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lms_department_controller_base_a2dc8de8e733cee8b7241edbdef406a86}\label{class_lms_department_controller_base_a2dc8de8e733cee8b7241edbdef406a86}} 
+\index{LmsDepartmentControllerBase@{LmsDepartmentControllerBase}!getOne@{getOne}}
+\index{getOne@{getOne}!LmsDepartmentControllerBase@{LmsDepartmentControllerBase}}
+\doxysubsubsection{\texorpdfstring{getOne()}{getOne()}}
+{\footnotesize\ttfamily void Lms\+Department\+Controller\+Base\+::get\+One (\begin{DoxyParamCaption}\item[{const Http\+Request\+Ptr \&}]{req,  }\item[{std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&}]{callback,  }\item[{Department\+::\+Primary\+Key\+Type \&\&}]{id }\end{DoxyParamCaption})}
+
+Lms\+Department\+Controller\+Base.\+cc 

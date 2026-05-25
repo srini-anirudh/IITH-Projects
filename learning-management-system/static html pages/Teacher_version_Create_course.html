@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+      <title>Learning Management System</title>
+     <link rel="stylesheet" type="text/css" href="External_css.css" media="screen">
+    <style type="text/css" media="all">
+        
+         
+    section h3{
+                   font-size:1.5em;
+                   width:30%;
+                  
+              }
+    .c_sam{
+             overflow:hidden;
+          }
+    text{
+          width:150px;
+        }
+    input{
+           width:700px;  
+         }
+    input[id=text3]{
+           height:60px; 
+         }
+    input[id=text4]{
+           height:60px; 
+         }
+    input[id=text5]{
+           height:60px; 
+         }
+    button{
+              height:40px; 
+              width:200px;
+              text-decoration:none;
+              color:black;
+              display:block;
+              padding:8px;
+          }
+   
+     
+         </style>
+</head>
+
+
+<body>
+      <header> 
+             <div class="C2">
+              <h3>AYAS LEARNING MANAGEMENT SYSTEM</h3>
+              <h1>Logged in as username</h1>
+             </div>
+             <div class="C1">
+              <a href="login_page.html">Logout</a>
+              
+              <ul>
+              <li><a href="About_us.html">About us</a></li>
+              <li><a href="Home.html">Home</a></li>
+              </ul>
+             
+             </div>
+           <script type="text/javascript">
+                
+                function fn1()
+                {
+                     var str1 =document.getElementById("text1").value;
+                     var str2 =document.getElementById("text2").value;
+                     var str3 =document.getElementById("text3").value;
+                     var str4 =document.getElementById("text4").value;
+                     var str5 =document.getElementById("text5").value;
+                }
+
+             </script>
+              
+      </header>
+      <section>
+                <div class="cls4">
+                <h3>Create A New Course</h3>
+             <div class="c_sam"> 
+             <text>Course Name:</text><input id="text1"                                placeholder="Course Name">
+             </div>
+              <br>
+             <div class="c_sam"> 
+             <text>Course Owner Name:</text><input id="text2"                                          placeholder="Owner Name">
+             </div>
+             <br>
+             <div class="c_sam"> 
+             <text>Objective of Course:</text><input id="text3"                             placeholder="Objective">
+             </div>
+             <br>
+            <div class="c_sam"> 
+            <text>Syllabus:</text><input id="text4" placeholder="Syllabus">                             
+             </div>
+            <br>
+            <div class="c_sam"> 
+            <text>Evaluation Method:</text><input id="text5" placeholder="Evaluation Method">
+             </div>
+             <br>
+             <button onclick="fn1()" id="btn">Create</button>
+         
+            </div>
+      </section>
+</body>
+
+
+</html>

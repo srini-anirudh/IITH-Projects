@@ -1,0 +1,16 @@
+{
+    "db_clients": [
+        {
+            "name":"mysql_client",
+            "rdbms": "mysql",
+            "host": "127.0.0.1",
+            "port": 3306,
+            "dbname": "LMS_DB",
+            "user": "root",
+            "passwd": "password",
+            "is_fast": true,
+            "number_of_connections": 1,
+            "timeout": -1.0
+        }
+    ]
+}

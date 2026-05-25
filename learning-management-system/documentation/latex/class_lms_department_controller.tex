@@ -1,0 +1,63 @@
+\hypertarget{class_lms_department_controller}{}\doxysection{Lms\+Department\+Controller Class Reference}
+\label{class_lms_department_controller}\index{LmsDepartmentController@{LmsDepartmentController}}
+
+
+This class is a restful API controller for reading and writing the department table.  
+
+
+
+
+{\ttfamily \#include $<$Lms\+Department\+Controller.\+h$>$}
+
+Inheritance diagram for Lms\+Department\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.709677cm]{class_lms_department_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_lms_department_controller_ad90c63efebc58a53fb7908c9e5cc017f}\label{class_lms_department_controller_ad90c63efebc58a53fb7908c9e5cc017f}} 
+METHOD\+\_\+\+LIST\+\_\+\+BEGIN {\bfseries ADD\+\_\+\+METHOD\+\_\+\+TO} (\mbox{\hyperlink{class_lms_department_controller_aef86de6631ad083c0810a836c03772d8}{Lms\+Department\+Controller\+::get\+One}},\char`\"{}/department/\{1\}\char`\"{}, Get, Options)
+\item 
+\mbox{\Hypertarget{class_lms_department_controller_a76afc1fa66b0b21a9573fe9f80e7ef51}\label{class_lms_department_controller_a76afc1fa66b0b21a9573fe9f80e7ef51}} 
+{\bfseries ADD\+\_\+\+METHOD\+\_\+\+TO} (Lms\+Department\+Controller\+::update\+One,\char`\"{}/department/\{1\}\char`\"{}, Put, Options)
+\item 
+\mbox{\Hypertarget{class_lms_department_controller_a0441d188c797708944f65a48dcd41f4b}\label{class_lms_department_controller_a0441d188c797708944f65a48dcd41f4b}} 
+{\bfseries ADD\+\_\+\+METHOD\+\_\+\+TO} (Lms\+Department\+Controller\+::delete\+One,\char`\"{}/department/\{1\}\char`\"{}, Delete, Options)
+\item 
+\mbox{\Hypertarget{class_lms_department_controller_ac085816070b8051fd6b10e3a79a5d228}\label{class_lms_department_controller_ac085816070b8051fd6b10e3a79a5d228}} 
+{\bfseries ADD\+\_\+\+METHOD\+\_\+\+TO} (Lms\+Department\+Controller\+::get,\char`\"{}/department\char`\"{}, Get, Options)
+\item 
+\mbox{\Hypertarget{class_lms_department_controller_a8ffa392a708a1e94c6b5fbffc3a9aaa2}\label{class_lms_department_controller_a8ffa392a708a1e94c6b5fbffc3a9aaa2}} 
+{\bfseries ADD\+\_\+\+METHOD\+\_\+\+TO} (Lms\+Department\+Controller\+::create,\char`\"{}/department\char`\"{}, Post, Options)
+\item 
+METHOD\+\_\+\+LIST\+\_\+\+END void \mbox{\hyperlink{class_lms_department_controller_aef86de6631ad083c0810a836c03772d8}{get\+One}} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback, Department\+::\+Primary\+Key\+Type \&\&id)
+\item 
+\mbox{\Hypertarget{class_lms_department_controller_afc70dd98f35d090432a3cffbd196b9a9}\label{class_lms_department_controller_afc70dd98f35d090432a3cffbd196b9a9}} 
+void {\bfseries update\+One} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback, Department\+::\+Primary\+Key\+Type \&\&id)
+\item 
+\mbox{\Hypertarget{class_lms_department_controller_ab811e45c5d622f6269621d774bedad84}\label{class_lms_department_controller_ab811e45c5d622f6269621d774bedad84}} 
+void {\bfseries delete\+One} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback, Department\+::\+Primary\+Key\+Type \&\&id)
+\item 
+\mbox{\Hypertarget{class_lms_department_controller_a60bcd6fbb5e9c43b239e6d2dfbbb4ba5}\label{class_lms_department_controller_a60bcd6fbb5e9c43b239e6d2dfbbb4ba5}} 
+void {\bfseries get} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback)
+\item 
+\mbox{\Hypertarget{class_lms_department_controller_afeea56d3080744f67bc3ce1e3f02d7c6}\label{class_lms_department_controller_afeea56d3080744f67bc3ce1e3f02d7c6}} 
+void {\bfseries create} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class is a restful API controller for reading and writing the department table. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lms_department_controller_aef86de6631ad083c0810a836c03772d8}\label{class_lms_department_controller_aef86de6631ad083c0810a836c03772d8}} 
+\index{LmsDepartmentController@{LmsDepartmentController}!getOne@{getOne}}
+\index{getOne@{getOne}!LmsDepartmentController@{LmsDepartmentController}}
+\doxysubsubsection{\texorpdfstring{getOne()}{getOne()}}
+{\footnotesize\ttfamily void Lms\+Department\+Controller\+::get\+One (\begin{DoxyParamCaption}\item[{const Http\+Request\+Ptr \&}]{req,  }\item[{std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&}]{callback,  }\item[{Department\+::\+Primary\+Key\+Type \&\&}]{id }\end{DoxyParamCaption})}
+
+Lms\+Department\+Controller.\+cc 

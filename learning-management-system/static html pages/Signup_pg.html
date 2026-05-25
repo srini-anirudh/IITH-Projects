@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="utf-8">
+          <title>Signup page of our LMS</title>
+        <link rel="stylesheet" type="text/css" href="External_css.css" media="screen">
+        <style type="text/css" media="all">
+         
+    section h3{
+                   font-size:1em;
+                  
+              }     
+         </style>
+</head>
+<body>
+      <header>
+            
+            <div class="C2">
+              <h3>AYAS LEARNING MANAGEMENT SYSTEM</h3>
+              
+             </div>
+            <div class="C1">           
+              <ul>
+              <li><a href="About_us.html">About us</a></li>
+              <li><a href="Home.html">Home</a></li>
+              </ul>
+            <script type="text/javascript">
+                function fn1()
+                {
+                     var str1 =document.getElementById("text1").value;
+                     //alert("You have joined the class with with                        //code:" +str);
+                     var str2 =document.getElementById("text2").value;                        var str3 =document.getElementById("text3").value;                        var str4 =document.getElementById("text4").value;                        var str5 =document.getElementById("text5").value;                        var str6 =document.getElementById("text6").value;
+                }
+                function fn2()
+                {
+                     var stri1 =document.getElementById("text1").value;
+                     //alert("You have joined the class with with                        //code:" +str);
+                     var stri2 =document.getElementById("text2").value;                       var stri3 =document.getElementById("text3").value;                       var stri4 =document.getElementById("text4").value;                       var stri5 =document.getElementById("text5").value;                       var stri6 =document.getElementById("text6").value;
+                }
+               
+             document.querySelector("#myFileInput").addEventListener("change", function (){
+               console.log(this.files);
+         });
+
+
+             </script>
+      </header>
+      <section>
+            <div class="cls3">
+                <h3>Signup</h3>
+           <text>Enter the following details:</text>
+           <br><br>
+             <text>First Name:</text><input id="text1"  placeholder="First name">
+              <br><br>
+             <text>Last Name:</text><input id="text2"  placeholder="Last name">
+              <br><br>
+             <text>Department:</text><input id="text3"  placeholder="Department">
+              <br><br> 
+             <text>Date Of Birth:</text><input id="text4"  placeholder="DD/MM/YYYY">
+              <br><br>
+              <text>User Name:</text>
+             <input id="text5"  placeholder="User name">
+              <br><br>
+             <text>Password:</text>
+             <input type="password" id="text6"                                            placeholder="Password">
+             <br><br>
+             <text>Retype Password:</text>
+             <input type="password" id="text7" 
+                    placeholder="Retype Password">
+             <br><br>
+             <pic>
+             <text>Upload Profile Pic:</text>
+             <br><br>
+             <input type="file" id="myFileInput">
+             </pic>
+            
+             <br><br><br>
+      <subsection>
+           <btn1>
+             <button onclick="fn1()" id="btn1">Signup as                  Teacher</button>
+           </btn1>
+           <btn2>
+             <button onclick="fn2()" id="btn2">Signup as                  Student</button>
+           </btn2>
+      </subsection>
+            </div>
+            
+      </section>
+
+
+
+
+</body>
+
+
+
+
+
+</html>

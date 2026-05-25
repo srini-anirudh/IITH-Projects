@@ -1,0 +1,65 @@
+\hypertarget{class_lms_assignment_controller_base}{}\doxysection{Lms\+Assignment\+Controller\+Base Class Reference}
+\label{class_lms_assignment_controller_base}\index{LmsAssignmentControllerBase@{LmsAssignmentControllerBase}}
+
+
+This class is a restful API controller for reading and writing the assignment table.  
+
+
+
+
+{\ttfamily \#include $<$Lms\+Assignment\+Controller\+Base.\+h$>$}
+
+Inheritance diagram for Lms\+Assignment\+Controller\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_lms_assignment_controller_base}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_lms_assignment_controller_base_ac77d03b2168563b28ee87d77c632b557}{get}} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback)
+\item 
+\mbox{\Hypertarget{class_lms_assignment_controller_base_aba87962199b1a4546f9a69720d529d1f}\label{class_lms_assignment_controller_base_aba87962199b1a4546f9a69720d529d1f}} 
+void {\bfseries create} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback)
+\item 
+\mbox{\Hypertarget{class_lms_assignment_controller_base_ab3931bfa3d7a7119ed9476ca33f8b0a3}\label{class_lms_assignment_controller_base_ab3931bfa3d7a7119ed9476ca33f8b0a3}} 
+orm\+::\+Db\+Client\+Ptr {\bfseries get\+Db\+Client} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lms_assignment_controller_base_a76728328771b6a527ff41b9e7493325f}{Lms\+Assignment\+Controller\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Ensure that subclasses inherited from this class are instantiated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_lms_assignment_controller_base_a3c89166f5c5d162267b4d219340021a5}\label{class_lms_assignment_controller_base_a3c89166f5c5d162267b4d219340021a5}} 
+const std\+::string {\bfseries db\+Client\+Name\+\_\+} \{\char`\"{}mysql\+\_\+client\char`\"{}\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is a restful API controller for reading and writing the assignment table. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_lms_assignment_controller_base_a76728328771b6a527ff41b9e7493325f}\label{class_lms_assignment_controller_base_a76728328771b6a527ff41b9e7493325f}} 
+\index{LmsAssignmentControllerBase@{LmsAssignmentControllerBase}!LmsAssignmentControllerBase@{LmsAssignmentControllerBase}}
+\index{LmsAssignmentControllerBase@{LmsAssignmentControllerBase}!LmsAssignmentControllerBase@{LmsAssignmentControllerBase}}
+\doxysubsubsection{\texorpdfstring{LmsAssignmentControllerBase()}{LmsAssignmentControllerBase()}}
+{\footnotesize\ttfamily Lms\+Assignment\+Controller\+Base\+::\+Lms\+Assignment\+Controller\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Ensure that subclasses inherited from this class are instantiated. 
+
+The items in the vector are aliases of column names in the table. if one item is set to an empty string, the related column is not sent to clients.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lms_assignment_controller_base_ac77d03b2168563b28ee87d77c632b557}\label{class_lms_assignment_controller_base_ac77d03b2168563b28ee87d77c632b557}} 
+\index{LmsAssignmentControllerBase@{LmsAssignmentControllerBase}!get@{get}}
+\index{get@{get}!LmsAssignmentControllerBase@{LmsAssignmentControllerBase}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily void Lms\+Assignment\+Controller\+Base\+::get (\begin{DoxyParamCaption}\item[{const Http\+Request\+Ptr \&}]{req,  }\item[{std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&}]{callback }\end{DoxyParamCaption})}
+
+Lms\+Assignment\+Controller\+Base.\+cc 

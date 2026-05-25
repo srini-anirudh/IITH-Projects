@@ -1,0 +1,74 @@
+\hypertarget{class_lms_users_controller_base}{}\doxysection{Lms\+Users\+Controller\+Base Class Reference}
+\label{class_lms_users_controller_base}\index{LmsUsersControllerBase@{LmsUsersControllerBase}}
+
+
+This class is a restful API controller for reading and writing the users table.  
+
+
+
+
+{\ttfamily \#include $<$Lms\+Users\+Controller\+Base.\+h$>$}
+
+Inheritance diagram for Lms\+Users\+Controller\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_lms_users_controller_base}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_lms_users_controller_base_a500d1ef606c97cd27585b5d4f3b56a0e}{get\+One}} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback, Users\+::\+Primary\+Key\+Type \&\&id)
+\item 
+\mbox{\Hypertarget{class_lms_users_controller_base_afbf57acc9821371a5ea6bc7ce44fbea0}\label{class_lms_users_controller_base_afbf57acc9821371a5ea6bc7ce44fbea0}} 
+void {\bfseries update\+One} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback, Users\+::\+Primary\+Key\+Type \&\&id)
+\item 
+\mbox{\Hypertarget{class_lms_users_controller_base_ae68f69a0a35fd4a3427afa3bc3c82226}\label{class_lms_users_controller_base_ae68f69a0a35fd4a3427afa3bc3c82226}} 
+void {\bfseries delete\+One} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback, Users\+::\+Primary\+Key\+Type \&\&id)
+\item 
+\mbox{\Hypertarget{class_lms_users_controller_base_a1bac51505db5942f176e00c5b36d6f6b}\label{class_lms_users_controller_base_a1bac51505db5942f176e00c5b36d6f6b}} 
+void {\bfseries get} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback)
+\item 
+\mbox{\Hypertarget{class_lms_users_controller_base_a0d289bd3ef99900e353441b6cb5dc2b4}\label{class_lms_users_controller_base_a0d289bd3ef99900e353441b6cb5dc2b4}} 
+void {\bfseries create} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback)
+\item 
+\mbox{\Hypertarget{class_lms_users_controller_base_ac88a3724786e4e4d5a9ac97b5dc2fb43}\label{class_lms_users_controller_base_ac88a3724786e4e4d5a9ac97b5dc2fb43}} 
+orm\+::\+Db\+Client\+Ptr {\bfseries get\+Db\+Client} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lms_users_controller_base_a8d97153599c3fecb48d237c6b50285fe}{Lms\+Users\+Controller\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Ensure that subclasses inherited from this class are instantiated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_lms_users_controller_base_a026718c435d920bf7e16d966211d58a0}\label{class_lms_users_controller_base_a026718c435d920bf7e16d966211d58a0}} 
+const std\+::string {\bfseries db\+Client\+Name\+\_\+} \{\char`\"{}mysql\+\_\+client\char`\"{}\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is a restful API controller for reading and writing the users table. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_lms_users_controller_base_a8d97153599c3fecb48d237c6b50285fe}\label{class_lms_users_controller_base_a8d97153599c3fecb48d237c6b50285fe}} 
+\index{LmsUsersControllerBase@{LmsUsersControllerBase}!LmsUsersControllerBase@{LmsUsersControllerBase}}
+\index{LmsUsersControllerBase@{LmsUsersControllerBase}!LmsUsersControllerBase@{LmsUsersControllerBase}}
+\doxysubsubsection{\texorpdfstring{LmsUsersControllerBase()}{LmsUsersControllerBase()}}
+{\footnotesize\ttfamily Lms\+Users\+Controller\+Base\+::\+Lms\+Users\+Controller\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Ensure that subclasses inherited from this class are instantiated. 
+
+The items in the vector are aliases of column names in the table. if one item is set to an empty string, the related column is not sent to clients.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lms_users_controller_base_a500d1ef606c97cd27585b5d4f3b56a0e}\label{class_lms_users_controller_base_a500d1ef606c97cd27585b5d4f3b56a0e}} 
+\index{LmsUsersControllerBase@{LmsUsersControllerBase}!getOne@{getOne}}
+\index{getOne@{getOne}!LmsUsersControllerBase@{LmsUsersControllerBase}}
+\doxysubsubsection{\texorpdfstring{getOne()}{getOne()}}
+{\footnotesize\ttfamily void Lms\+Users\+Controller\+Base\+::get\+One (\begin{DoxyParamCaption}\item[{const Http\+Request\+Ptr \&}]{req,  }\item[{std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&}]{callback,  }\item[{Users\+::\+Primary\+Key\+Type \&\&}]{id }\end{DoxyParamCaption})}
+
+Lms\+Users\+Controller\+Base.\+cc 

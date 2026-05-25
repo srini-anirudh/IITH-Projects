@@ -1,0 +1,65 @@
+\hypertarget{class_lms_courseteacher_controller_base}{}\doxysection{Lms\+Courseteacher\+Controller\+Base Class Reference}
+\label{class_lms_courseteacher_controller_base}\index{LmsCourseteacherControllerBase@{LmsCourseteacherControllerBase}}
+
+
+This class is a restful API controller for reading and writing the courseteacher table.  
+
+
+
+
+{\ttfamily \#include $<$Lms\+Courseteacher\+Controller\+Base.\+h$>$}
+
+Inheritance diagram for Lms\+Courseteacher\+Controller\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_lms_courseteacher_controller_base}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_lms_courseteacher_controller_base_a22d3a479035e778b582368e113d65d98}{get}} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback)
+\item 
+\mbox{\Hypertarget{class_lms_courseteacher_controller_base_a3cfcbeb0ac95adee5aaa0ee8974a4a47}\label{class_lms_courseteacher_controller_base_a3cfcbeb0ac95adee5aaa0ee8974a4a47}} 
+void {\bfseries create} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback)
+\item 
+\mbox{\Hypertarget{class_lms_courseteacher_controller_base_a0662275df7c9a3f03b79caaf65792d33}\label{class_lms_courseteacher_controller_base_a0662275df7c9a3f03b79caaf65792d33}} 
+orm\+::\+Db\+Client\+Ptr {\bfseries get\+Db\+Client} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lms_courseteacher_controller_base_ac8cff76457c27d9cf0dde5e057b2d0a4}{Lms\+Courseteacher\+Controller\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Ensure that subclasses inherited from this class are instantiated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_lms_courseteacher_controller_base_ae532065c8035d774335ac8bc9fed0c2c}\label{class_lms_courseteacher_controller_base_ae532065c8035d774335ac8bc9fed0c2c}} 
+const std\+::string {\bfseries db\+Client\+Name\+\_\+} \{\char`\"{}mysql\+\_\+client\char`\"{}\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is a restful API controller for reading and writing the courseteacher table. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_lms_courseteacher_controller_base_ac8cff76457c27d9cf0dde5e057b2d0a4}\label{class_lms_courseteacher_controller_base_ac8cff76457c27d9cf0dde5e057b2d0a4}} 
+\index{LmsCourseteacherControllerBase@{LmsCourseteacherControllerBase}!LmsCourseteacherControllerBase@{LmsCourseteacherControllerBase}}
+\index{LmsCourseteacherControllerBase@{LmsCourseteacherControllerBase}!LmsCourseteacherControllerBase@{LmsCourseteacherControllerBase}}
+\doxysubsubsection{\texorpdfstring{LmsCourseteacherControllerBase()}{LmsCourseteacherControllerBase()}}
+{\footnotesize\ttfamily Lms\+Courseteacher\+Controller\+Base\+::\+Lms\+Courseteacher\+Controller\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Ensure that subclasses inherited from this class are instantiated. 
+
+The items in the vector are aliases of column names in the table. if one item is set to an empty string, the related column is not sent to clients.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lms_courseteacher_controller_base_a22d3a479035e778b582368e113d65d98}\label{class_lms_courseteacher_controller_base_a22d3a479035e778b582368e113d65d98}} 
+\index{LmsCourseteacherControllerBase@{LmsCourseteacherControllerBase}!get@{get}}
+\index{get@{get}!LmsCourseteacherControllerBase@{LmsCourseteacherControllerBase}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily void Lms\+Courseteacher\+Controller\+Base\+::get (\begin{DoxyParamCaption}\item[{const Http\+Request\+Ptr \&}]{req,  }\item[{std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&}]{callback }\end{DoxyParamCaption})}
+
+Lms\+Courseteacher\+Controller\+Base.\+cc 

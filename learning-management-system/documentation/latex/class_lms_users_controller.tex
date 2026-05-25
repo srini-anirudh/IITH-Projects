@@ -1,0 +1,63 @@
+\hypertarget{class_lms_users_controller}{}\doxysection{Lms\+Users\+Controller Class Reference}
+\label{class_lms_users_controller}\index{LmsUsersController@{LmsUsersController}}
+
+
+This class is a restful API controller for reading and writing the users table.  
+
+
+
+
+{\ttfamily \#include $<$Lms\+Users\+Controller.\+h$>$}
+
+Inheritance diagram for Lms\+Users\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_lms_users_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_lms_users_controller_a0b970299c377163b965618f0755ef4dd}\label{class_lms_users_controller_a0b970299c377163b965618f0755ef4dd}} 
+METHOD\+\_\+\+LIST\+\_\+\+BEGIN {\bfseries ADD\+\_\+\+METHOD\+\_\+\+TO} (\mbox{\hyperlink{class_lms_users_controller_a45ff26adc6309ebf3a3ba910ed1fb544}{Lms\+Users\+Controller\+::get\+One}},\char`\"{}/users/\{1\}\char`\"{}, Get, Options)
+\item 
+\mbox{\Hypertarget{class_lms_users_controller_a040f9c288094d5fb4579f9040317d7ac}\label{class_lms_users_controller_a040f9c288094d5fb4579f9040317d7ac}} 
+{\bfseries ADD\+\_\+\+METHOD\+\_\+\+TO} (Lms\+Users\+Controller\+::update\+One,\char`\"{}/users/\{1\}\char`\"{}, Put, Options)
+\item 
+\mbox{\Hypertarget{class_lms_users_controller_ad8ec2b24753238aaea5095c72aa7fc2b}\label{class_lms_users_controller_ad8ec2b24753238aaea5095c72aa7fc2b}} 
+{\bfseries ADD\+\_\+\+METHOD\+\_\+\+TO} (Lms\+Users\+Controller\+::delete\+One,\char`\"{}/users/\{1\}\char`\"{}, Delete, Options)
+\item 
+\mbox{\Hypertarget{class_lms_users_controller_ae737e63a62d4553e7c275bf530185693}\label{class_lms_users_controller_ae737e63a62d4553e7c275bf530185693}} 
+{\bfseries ADD\+\_\+\+METHOD\+\_\+\+TO} (Lms\+Users\+Controller\+::get,\char`\"{}/users\char`\"{}, Get, Options)
+\item 
+\mbox{\Hypertarget{class_lms_users_controller_a7c795968d076bd27bb20ddcedab53339}\label{class_lms_users_controller_a7c795968d076bd27bb20ddcedab53339}} 
+{\bfseries ADD\+\_\+\+METHOD\+\_\+\+TO} (Lms\+Users\+Controller\+::create,\char`\"{}/users\char`\"{}, Post, Options)
+\item 
+METHOD\+\_\+\+LIST\+\_\+\+END void \mbox{\hyperlink{class_lms_users_controller_a45ff26adc6309ebf3a3ba910ed1fb544}{get\+One}} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback, Users\+::\+Primary\+Key\+Type \&\&id)
+\item 
+\mbox{\Hypertarget{class_lms_users_controller_ac0f27ccb1307d21d77489666ef02cc89}\label{class_lms_users_controller_ac0f27ccb1307d21d77489666ef02cc89}} 
+void {\bfseries update\+One} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback, Users\+::\+Primary\+Key\+Type \&\&id)
+\item 
+\mbox{\Hypertarget{class_lms_users_controller_add370bd75e32d83064eb90fd7c1e5b9e}\label{class_lms_users_controller_add370bd75e32d83064eb90fd7c1e5b9e}} 
+void {\bfseries delete\+One} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback, Users\+::\+Primary\+Key\+Type \&\&id)
+\item 
+\mbox{\Hypertarget{class_lms_users_controller_a9dd862cc2b3a427f04748b35f3df62b7}\label{class_lms_users_controller_a9dd862cc2b3a427f04748b35f3df62b7}} 
+void {\bfseries get} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback)
+\item 
+\mbox{\Hypertarget{class_lms_users_controller_a9b9f8ff3698fc2e45f767ea878515ad0}\label{class_lms_users_controller_a9b9f8ff3698fc2e45f767ea878515ad0}} 
+void {\bfseries create} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class is a restful API controller for reading and writing the users table. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lms_users_controller_a45ff26adc6309ebf3a3ba910ed1fb544}\label{class_lms_users_controller_a45ff26adc6309ebf3a3ba910ed1fb544}} 
+\index{LmsUsersController@{LmsUsersController}!getOne@{getOne}}
+\index{getOne@{getOne}!LmsUsersController@{LmsUsersController}}
+\doxysubsubsection{\texorpdfstring{getOne()}{getOne()}}
+{\footnotesize\ttfamily void Lms\+Users\+Controller\+::get\+One (\begin{DoxyParamCaption}\item[{const Http\+Request\+Ptr \&}]{req,  }\item[{std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&}]{callback,  }\item[{Users\+::\+Primary\+Key\+Type \&\&}]{id }\end{DoxyParamCaption})}
+
+Lms\+Users\+Controller.\+cc 

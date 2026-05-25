@@ -1,0 +1,63 @@
+\hypertarget{class_lms_files_controller}{}\doxysection{Lms\+Files\+Controller Class Reference}
+\label{class_lms_files_controller}\index{LmsFilesController@{LmsFilesController}}
+
+
+This class is a restful API controller for reading and writing the files table.  
+
+
+
+
+{\ttfamily \#include $<$Lms\+Files\+Controller.\+h$>$}
+
+Inheritance diagram for Lms\+Files\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_lms_files_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_lms_files_controller_a7c3ea5dae5ea8a82736127161aa59179}\label{class_lms_files_controller_a7c3ea5dae5ea8a82736127161aa59179}} 
+METHOD\+\_\+\+LIST\+\_\+\+BEGIN {\bfseries ADD\+\_\+\+METHOD\+\_\+\+TO} (\mbox{\hyperlink{class_lms_files_controller_aaf393827bfd649df6df118e46760fe20}{Lms\+Files\+Controller\+::get\+One}},\char`\"{}/files/\{1\}\char`\"{}, Get, Options)
+\item 
+\mbox{\Hypertarget{class_lms_files_controller_af8e42608fcb5fe448354607f71eaf6d2}\label{class_lms_files_controller_af8e42608fcb5fe448354607f71eaf6d2}} 
+{\bfseries ADD\+\_\+\+METHOD\+\_\+\+TO} (Lms\+Files\+Controller\+::update\+One,\char`\"{}/files/\{1\}\char`\"{}, Put, Options)
+\item 
+\mbox{\Hypertarget{class_lms_files_controller_a448d6990c6cc4bc6d88d16ba2aaf895d}\label{class_lms_files_controller_a448d6990c6cc4bc6d88d16ba2aaf895d}} 
+{\bfseries ADD\+\_\+\+METHOD\+\_\+\+TO} (Lms\+Files\+Controller\+::delete\+One,\char`\"{}/files/\{1\}\char`\"{}, Delete, Options)
+\item 
+\mbox{\Hypertarget{class_lms_files_controller_abeb2239ff5ced6f2c74383b1d66ca836}\label{class_lms_files_controller_abeb2239ff5ced6f2c74383b1d66ca836}} 
+{\bfseries ADD\+\_\+\+METHOD\+\_\+\+TO} (Lms\+Files\+Controller\+::get,\char`\"{}/files\char`\"{}, Get, Options)
+\item 
+\mbox{\Hypertarget{class_lms_files_controller_a59d332a61fa5bb5f20cea0a75fff9a05}\label{class_lms_files_controller_a59d332a61fa5bb5f20cea0a75fff9a05}} 
+{\bfseries ADD\+\_\+\+METHOD\+\_\+\+TO} (Lms\+Files\+Controller\+::create,\char`\"{}/files\char`\"{}, Post, Options)
+\item 
+METHOD\+\_\+\+LIST\+\_\+\+END void \mbox{\hyperlink{class_lms_files_controller_aaf393827bfd649df6df118e46760fe20}{get\+One}} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback, Files\+::\+Primary\+Key\+Type \&\&id)
+\item 
+\mbox{\Hypertarget{class_lms_files_controller_aa11090c8c4746d4a42aed6a50684f545}\label{class_lms_files_controller_aa11090c8c4746d4a42aed6a50684f545}} 
+void {\bfseries update\+One} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback, Files\+::\+Primary\+Key\+Type \&\&id)
+\item 
+\mbox{\Hypertarget{class_lms_files_controller_a8054bb849a0f12747b9aaf9d0e926e67}\label{class_lms_files_controller_a8054bb849a0f12747b9aaf9d0e926e67}} 
+void {\bfseries delete\+One} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback, Files\+::\+Primary\+Key\+Type \&\&id)
+\item 
+\mbox{\Hypertarget{class_lms_files_controller_ae563f6d1f22029762579e6e05bca35c9}\label{class_lms_files_controller_ae563f6d1f22029762579e6e05bca35c9}} 
+void {\bfseries get} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback)
+\item 
+\mbox{\Hypertarget{class_lms_files_controller_a7e2563d9427b68b9d8e0486172159869}\label{class_lms_files_controller_a7e2563d9427b68b9d8e0486172159869}} 
+void {\bfseries create} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class is a restful API controller for reading and writing the files table. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lms_files_controller_aaf393827bfd649df6df118e46760fe20}\label{class_lms_files_controller_aaf393827bfd649df6df118e46760fe20}} 
+\index{LmsFilesController@{LmsFilesController}!getOne@{getOne}}
+\index{getOne@{getOne}!LmsFilesController@{LmsFilesController}}
+\doxysubsubsection{\texorpdfstring{getOne()}{getOne()}}
+{\footnotesize\ttfamily void Lms\+Files\+Controller\+::get\+One (\begin{DoxyParamCaption}\item[{const Http\+Request\+Ptr \&}]{req,  }\item[{std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&}]{callback,  }\item[{Files\+::\+Primary\+Key\+Type \&\&}]{id }\end{DoxyParamCaption})}
+
+Lms\+Files\+Controller.\+cc 

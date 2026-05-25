@@ -1,0 +1,207 @@
+\hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files}{}\doxysection{drogon\+\_\+model\+::LMS\+\_\+\+DB\+::Files Class Reference}
+\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files}\index{drogon\_model::LMS\_DB::Files@{drogon\_model::LMS\_DB::Files}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structdrogon__model_1_1_l_m_s___d_b_1_1_files_1_1_cols}{Cols}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_adacab54985cdf2bc2ee5f42dad3fc6ce}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_adacab54985cdf2bc2ee5f42dad3fc6ce}} 
+using {\bfseries Primary\+Key\+Type} = uint32\+\_\+t
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_aa1ed44b10bdc686e183e7fd7834d8dfa}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_aa1ed44b10bdc686e183e7fd7834d8dfa}} 
+const Primary\+Key\+Type \& {\bfseries get\+Primary\+Key} () const
+\item 
+\mbox{\hyperlink{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a7904dfbdc7a96df924ff3482dbf4a5e3}{Files}} (const Row \&r, const ssize\+\_\+t index\+Offset=0) noexcept
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a9c8ff32c132eafa602879f947cb645a2}{Files}} (const Json\+::\+Value \&p\+Json) noexcept(false)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a911700615f26ff99510c0816e7dde426}{Files}} (const Json\+::\+Value \&p\+Json, const std\+::vector$<$ std\+::string $>$ \&p\+Masquerading\+Vector) noexcept(false)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_aec9396cb886737132baa2ad1acf8e367}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_aec9396cb886737132baa2ad1acf8e367}} 
+void {\bfseries update\+By\+Json} (const Json\+::\+Value \&p\+Json) noexcept(false)
+\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_ae4ca949a025326b31d7751cc934d3474}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_ae4ca949a025326b31d7751cc934d3474}} 
+void {\bfseries update\+By\+Masqueraded\+Json} (const Json\+::\+Value \&p\+Json, const std\+::vector$<$ std\+::string $>$ \&p\+Masquerading\+Vector) noexcept(false)
+\item 
+const uint32\+\_\+t \& \mbox{\hyperlink{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a5ef1f1461645be5392da33870b9ca2d0}{get\+Value\+Of\+Id}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Get the value of the column id, returns the default value if the column is null. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a7bb74ca2f61812a9f7f7faa6290ab4e7}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a7bb74ca2f61812a9f7f7faa6290ab4e7}} 
+const std\+::shared\+\_\+ptr$<$ uint32\+\_\+t $>$ \& \mbox{\hyperlink{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a7bb74ca2f61812a9f7f7faa6290ab4e7}{get\+Id}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Return a shared\+\_\+ptr object pointing to the column const value, or an empty shared\+\_\+ptr object if the column is null. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_ab98e069ebd5822f0d0f8ca8fc2b310ae}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_ab98e069ebd5822f0d0f8ca8fc2b310ae}} 
+void \mbox{\hyperlink{classdrogon__model_1_1_l_m_s___d_b_1_1_files_ab98e069ebd5822f0d0f8ca8fc2b310ae}{set\+Id}} (const uint32\+\_\+t \&p\+Id) noexcept
+\begin{DoxyCompactList}\small\item\em Set the value of the column id. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classdrogon__model_1_1_l_m_s___d_b_1_1_files_aa70f65d98ba1b6127e9c5b022d637ec5}{get\+Value\+Of\+Name}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Get the value of the column name, returns the default value if the column is null. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a9d4c7fc624b42b277238b390e981f882}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a9d4c7fc624b42b277238b390e981f882}} 
+const std\+::shared\+\_\+ptr$<$ std\+::string $>$ \& \mbox{\hyperlink{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a9d4c7fc624b42b277238b390e981f882}{get\+Name}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Return a shared\+\_\+ptr object pointing to the column const value, or an empty shared\+\_\+ptr object if the column is null. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a714c7c90b392ae3685be18d73b5ced53}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a714c7c90b392ae3685be18d73b5ced53}} 
+void \mbox{\hyperlink{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a714c7c90b392ae3685be18d73b5ced53}{set\+Name}} (const std\+::string \&p\+Name) noexcept
+\begin{DoxyCompactList}\small\item\em Set the value of the column name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_abfe6659e1b445735bec95a08675fde95}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_abfe6659e1b445735bec95a08675fde95}} 
+void {\bfseries set\+Name} (std\+::string \&\&p\+Name) noexcept
+\item 
+const std\+::string \& \mbox{\hyperlink{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a76eed7ac4a82ad7da973312680025cf0}{get\+Value\+Of\+Path}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Get the value of the column path, returns the default value if the column is null. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_aa3f0e7f59743dc6c5ecfc6907be04fdb}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_aa3f0e7f59743dc6c5ecfc6907be04fdb}} 
+const std\+::shared\+\_\+ptr$<$ std\+::string $>$ \& \mbox{\hyperlink{classdrogon__model_1_1_l_m_s___d_b_1_1_files_aa3f0e7f59743dc6c5ecfc6907be04fdb}{get\+Path}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Return a shared\+\_\+ptr object pointing to the column const value, or an empty shared\+\_\+ptr object if the column is null. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a3e9e094e1653a8307b90e990359bb646}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a3e9e094e1653a8307b90e990359bb646}} 
+void \mbox{\hyperlink{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a3e9e094e1653a8307b90e990359bb646}{set\+Path}} (const std\+::string \&p\+Path) noexcept
+\begin{DoxyCompactList}\small\item\em Set the value of the column path. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_afca2e4557bcdce1f3e9b8ab63a720642}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_afca2e4557bcdce1f3e9b8ab63a720642}} 
+void {\bfseries set\+Path} (std\+::string \&\&p\+Path) noexcept
+\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_ad50c8d779c23f7bf85f3ad337a17e42b}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_ad50c8d779c23f7bf85f3ad337a17e42b}} 
+Json\+::\+Value {\bfseries to\+Json} () const
+\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a55e70893b2bd51bcb925835956226f81}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a55e70893b2bd51bcb925835956226f81}} 
+Json\+::\+Value {\bfseries to\+Masqueraded\+Json} (const std\+::vector$<$ std\+::string $>$ \&p\+Masquerading\+Vector) const
+\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_ada3aa01fe4f7698102f18026c204355d}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_ada3aa01fe4f7698102f18026c204355d}} 
+std\+::string {\bfseries sql\+For\+Inserting} (bool \&need\+Selection) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_afc8300f24f4a98ac9e218a6ea6bbcf95}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_afc8300f24f4a98ac9e218a6ea6bbcf95}} 
+static bool {\bfseries validate\+Json\+For\+Creation} (const Json\+::\+Value \&p\+Json, std\+::string \&err)
+\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a744cec2c1b5fbe9e5784a496e5c6b228}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a744cec2c1b5fbe9e5784a496e5c6b228}} 
+static bool {\bfseries validate\+Masqueraded\+Json\+For\+Creation} (const Json\+::\+Value \&, const std\+::vector$<$ std\+::string $>$ \&p\+Masquerading\+Vector, std\+::string \&err)
+\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_aa8fdbdc5ba4fb1852d6bdfb0fb6e71ac}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_aa8fdbdc5ba4fb1852d6bdfb0fb6e71ac}} 
+static bool {\bfseries validate\+Json\+For\+Update} (const Json\+::\+Value \&p\+Json, std\+::string \&err)
+\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a443151a6c067daf6c928757e27e50e18}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a443151a6c067daf6c928757e27e50e18}} 
+static bool {\bfseries validate\+Masqueraded\+Json\+For\+Update} (const Json\+::\+Value \&, const std\+::vector$<$ std\+::string $>$ \&p\+Masquerading\+Vector, std\+::string \&err)
+\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a2835d3a38669d02658c1c9adddf4086b}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a2835d3a38669d02658c1c9adddf4086b}} 
+static bool {\bfseries valid\+Json\+Of\+Field} (size\+\_\+t index, const std\+::string \&field\+Name, const Json\+::\+Value \&p\+Json, std\+::string \&err, bool is\+For\+Creation)
+\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_af7dac96c9a1560d91564345c466eb8e2}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_af7dac96c9a1560d91564345c466eb8e2}} 
+static size\+\_\+t {\bfseries get\+Column\+Number} () noexcept
+\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a13a3a109b9217dca061a8b4c699c4b2f}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a13a3a109b9217dca061a8b4c699c4b2f}} 
+static const std\+::string \& {\bfseries get\+Column\+Name} (size\+\_\+t index) noexcept(false)
+\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a18e56bce8251f6b38f0e99ef252bf3b8}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a18e56bce8251f6b38f0e99ef252bf3b8}} 
+static const std\+::string \& {\bfseries sql\+For\+Finding\+By\+Primary\+Key} ()
+\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_ac22f5b240f821a4ed11eb34f7b6ce55a}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_ac22f5b240f821a4ed11eb34f7b6ce55a}} 
+static const std\+::string \& {\bfseries sql\+For\+Deleting\+By\+Primary\+Key} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_ae749a595d16d018778f2daf91ffdaad7}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_ae749a595d16d018778f2daf91ffdaad7}} 
+static const int {\bfseries primary\+Key\+Number}
+\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_aaea9f270078a03e30f0afd24df246eb2}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_aaea9f270078a03e30f0afd24df246eb2}} 
+static const std\+::string {\bfseries table\+Name} = \char`\"{}files\char`\"{}
+\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_ad0b487b5fa1df30181b52c328b0260cd}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_ad0b487b5fa1df30181b52c328b0260cd}} 
+static const bool {\bfseries has\+Primary\+Key} = true
+\item 
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a112a792c09511c8c1f12d501ce9740c5}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a112a792c09511c8c1f12d501ce9740c5}} 
+static const std\+::string {\bfseries primary\+Key\+Name} = \char`\"{}id\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a7904dfbdc7a96df924ff3482dbf4a5e3}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a7904dfbdc7a96df924ff3482dbf4a5e3}} 
+\index{drogon\_model::LMS\_DB::Files@{drogon\_model::LMS\_DB::Files}!Files@{Files}}
+\index{Files@{Files}!drogon\_model::LMS\_DB::Files@{drogon\_model::LMS\_DB::Files}}
+\doxysubsubsection{\texorpdfstring{Files()}{Files()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Files\+::\+Files (\begin{DoxyParamCaption}\item[{const Row \&}]{r,  }\item[{const ssize\+\_\+t}]{index\+Offset = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [noexcept]}}
+
+
+
+constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & One row of records in the SQL query result. \\
+\hline
+{\em index\+Offset} & Set the offset to -\/1 to access all columns by column names, otherwise access all columns by offsets. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If the SQL is not a style of \textquotesingle{}select $\ast$ from table\+\_\+name ...\textquotesingle{} (select all columns by an asterisk), please set the offset to -\/1. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a9c8ff32c132eafa602879f947cb645a2}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a9c8ff32c132eafa602879f947cb645a2}} 
+\index{drogon\_model::LMS\_DB::Files@{drogon\_model::LMS\_DB::Files}!Files@{Files}}
+\index{Files@{Files}!drogon\_model::LMS\_DB::Files@{drogon\_model::LMS\_DB::Files}}
+\doxysubsubsection{\texorpdfstring{Files()}{Files()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Files\+::\+Files (\begin{DoxyParamCaption}\item[{const Json\+::\+Value \&}]{p\+Json }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [noexcept]}}
+
+
+
+constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Json} & The json object to construct a new instance. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a911700615f26ff99510c0816e7dde426}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a911700615f26ff99510c0816e7dde426}} 
+\index{drogon\_model::LMS\_DB::Files@{drogon\_model::LMS\_DB::Files}!Files@{Files}}
+\index{Files@{Files}!drogon\_model::LMS\_DB::Files@{drogon\_model::LMS\_DB::Files}}
+\doxysubsubsection{\texorpdfstring{Files()}{Files()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Files\+::\+Files (\begin{DoxyParamCaption}\item[{const Json\+::\+Value \&}]{p\+Json,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{p\+Masquerading\+Vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Json} & The json object to construct a new instance. \\
+\hline
+{\em p\+Masquerading\+Vector} & The aliases of table columns. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a5ef1f1461645be5392da33870b9ca2d0}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a5ef1f1461645be5392da33870b9ca2d0}} 
+\index{drogon\_model::LMS\_DB::Files@{drogon\_model::LMS\_DB::Files}!getValueOfId@{getValueOfId}}
+\index{getValueOfId@{getValueOfId}!drogon\_model::LMS\_DB::Files@{drogon\_model::LMS\_DB::Files}}
+\doxysubsubsection{\texorpdfstring{getValueOfId()}{getValueOfId()}}
+{\footnotesize\ttfamily const uint32\+\_\+t \& Files\+::get\+Value\+Of\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Get the value of the column id, returns the default value if the column is null. 
+
+For column id ~\newline
+ \mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_aa70f65d98ba1b6127e9c5b022d637ec5}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_aa70f65d98ba1b6127e9c5b022d637ec5}} 
+\index{drogon\_model::LMS\_DB::Files@{drogon\_model::LMS\_DB::Files}!getValueOfName@{getValueOfName}}
+\index{getValueOfName@{getValueOfName}!drogon\_model::LMS\_DB::Files@{drogon\_model::LMS\_DB::Files}}
+\doxysubsubsection{\texorpdfstring{getValueOfName()}{getValueOfName()}}
+{\footnotesize\ttfamily const std\+::string \& Files\+::get\+Value\+Of\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Get the value of the column name, returns the default value if the column is null. 
+
+For column name ~\newline
+ \mbox{\Hypertarget{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a76eed7ac4a82ad7da973312680025cf0}\label{classdrogon__model_1_1_l_m_s___d_b_1_1_files_a76eed7ac4a82ad7da973312680025cf0}} 
+\index{drogon\_model::LMS\_DB::Files@{drogon\_model::LMS\_DB::Files}!getValueOfPath@{getValueOfPath}}
+\index{getValueOfPath@{getValueOfPath}!drogon\_model::LMS\_DB::Files@{drogon\_model::LMS\_DB::Files}}
+\doxysubsubsection{\texorpdfstring{getValueOfPath()}{getValueOfPath()}}
+{\footnotesize\ttfamily const std\+::string \& Files\+::get\+Value\+Of\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Get the value of the column path, returns the default value if the column is null. 
+
+For column path ~\newline
+ 

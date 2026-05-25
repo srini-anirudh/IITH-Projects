@@ -1,0 +1,63 @@
+\hypertarget{class_lms_course_controller}{}\doxysection{Lms\+Course\+Controller Class Reference}
+\label{class_lms_course_controller}\index{LmsCourseController@{LmsCourseController}}
+
+
+This class is a restful API controller for reading and writing the course table.  
+
+
+
+
+{\ttfamily \#include $<$Lms\+Course\+Controller.\+h$>$}
+
+Inheritance diagram for Lms\+Course\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.926829cm]{class_lms_course_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_lms_course_controller_a01fb1c00648eee515f6d2265c02d0db2}\label{class_lms_course_controller_a01fb1c00648eee515f6d2265c02d0db2}} 
+METHOD\+\_\+\+LIST\+\_\+\+BEGIN {\bfseries ADD\+\_\+\+METHOD\+\_\+\+TO} (\mbox{\hyperlink{class_lms_course_controller_ae5515db95dea634306f9b8ffccef42e5}{Lms\+Course\+Controller\+::get\+One}},\char`\"{}/course/\{1\}\char`\"{}, Get, Options)
+\item 
+\mbox{\Hypertarget{class_lms_course_controller_a0d597af49b6bf9f2f30409206c57c75d}\label{class_lms_course_controller_a0d597af49b6bf9f2f30409206c57c75d}} 
+{\bfseries ADD\+\_\+\+METHOD\+\_\+\+TO} (Lms\+Course\+Controller\+::update\+One,\char`\"{}/course/\{1\}\char`\"{}, Put, Options)
+\item 
+\mbox{\Hypertarget{class_lms_course_controller_aee7af153c96cc73d3f5aabb791273513}\label{class_lms_course_controller_aee7af153c96cc73d3f5aabb791273513}} 
+{\bfseries ADD\+\_\+\+METHOD\+\_\+\+TO} (Lms\+Course\+Controller\+::delete\+One,\char`\"{}/course/\{1\}\char`\"{}, Delete, Options)
+\item 
+\mbox{\Hypertarget{class_lms_course_controller_a0cad8499027f7998c8b0f1e4123f53bd}\label{class_lms_course_controller_a0cad8499027f7998c8b0f1e4123f53bd}} 
+{\bfseries ADD\+\_\+\+METHOD\+\_\+\+TO} (Lms\+Course\+Controller\+::get,\char`\"{}/course\char`\"{}, Get, Options)
+\item 
+\mbox{\Hypertarget{class_lms_course_controller_a4151d45c4b3f4cdc4dc00196801300ca}\label{class_lms_course_controller_a4151d45c4b3f4cdc4dc00196801300ca}} 
+{\bfseries ADD\+\_\+\+METHOD\+\_\+\+TO} (Lms\+Course\+Controller\+::create,\char`\"{}/course\char`\"{}, Post, Options)
+\item 
+METHOD\+\_\+\+LIST\+\_\+\+END void \mbox{\hyperlink{class_lms_course_controller_ae5515db95dea634306f9b8ffccef42e5}{get\+One}} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback, Course\+::\+Primary\+Key\+Type \&\&id)
+\item 
+\mbox{\Hypertarget{class_lms_course_controller_a49de2df767313980e3990b70800db1f1}\label{class_lms_course_controller_a49de2df767313980e3990b70800db1f1}} 
+void {\bfseries update\+One} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback, Course\+::\+Primary\+Key\+Type \&\&id)
+\item 
+\mbox{\Hypertarget{class_lms_course_controller_af35e8db7dce584d46a9e9972eda1aecb}\label{class_lms_course_controller_af35e8db7dce584d46a9e9972eda1aecb}} 
+void {\bfseries delete\+One} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback, Course\+::\+Primary\+Key\+Type \&\&id)
+\item 
+\mbox{\Hypertarget{class_lms_course_controller_aee3b192ff77c9230f5c7c1859ce30bef}\label{class_lms_course_controller_aee3b192ff77c9230f5c7c1859ce30bef}} 
+void {\bfseries get} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback)
+\item 
+\mbox{\Hypertarget{class_lms_course_controller_a37398c41d7216e59aa7878087cb6dad7}\label{class_lms_course_controller_a37398c41d7216e59aa7878087cb6dad7}} 
+void {\bfseries create} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class is a restful API controller for reading and writing the course table. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lms_course_controller_ae5515db95dea634306f9b8ffccef42e5}\label{class_lms_course_controller_ae5515db95dea634306f9b8ffccef42e5}} 
+\index{LmsCourseController@{LmsCourseController}!getOne@{getOne}}
+\index{getOne@{getOne}!LmsCourseController@{LmsCourseController}}
+\doxysubsubsection{\texorpdfstring{getOne()}{getOne()}}
+{\footnotesize\ttfamily void Lms\+Course\+Controller\+::get\+One (\begin{DoxyParamCaption}\item[{const Http\+Request\+Ptr \&}]{req,  }\item[{std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&}]{callback,  }\item[{Course\+::\+Primary\+Key\+Type \&\&}]{id }\end{DoxyParamCaption})}
+
+Lms\+Course\+Controller.\+cc 

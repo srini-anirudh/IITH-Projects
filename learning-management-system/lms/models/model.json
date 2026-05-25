@@ -1,0 +1,47 @@
+{
+    "rdbms": "mysql",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dbname": "LMS_DB",
+    "user": "root",
+    "password": "password",
+    "tables": [
+        "files",
+        "department",
+        "users",
+        "course",
+        "courseteacher",
+        "studentcourse",
+        "coursestudymaterial",
+        "assignment"
+    ],
+    "convert": {
+      "enabled": false,
+      "items":[{
+          "table": "users",
+          "column": "password",
+          "method": {
+            "after_db_read": "decrypt_password",
+            "before_db_write": "encrypt_password"
+          },
+          "includes": [
+            "\"file_local_search_path.h\"","<file_in_global_search_path.h>"
+          ]
+      }]
+    },
+    "relationships": {
+        "enabled": false
+    },
+    "restful_api_controllers": {
+        "enabled": true,
+        "resource_uri": "/*",
+        "class_name": "Lms*Controller",
+        "filters": [],
+        "db_client": {
+            "name": "default",
+            "is_fast": true
+        },
+        "directory": "../controllers/",
+        "generate_base_only": false
+    }
+}

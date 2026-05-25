@@ -1,0 +1,74 @@
+\hypertarget{class_lms_course_controller_base}{}\doxysection{Lms\+Course\+Controller\+Base Class Reference}
+\label{class_lms_course_controller_base}\index{LmsCourseControllerBase@{LmsCourseControllerBase}}
+
+
+This class is a restful API controller for reading and writing the course table.  
+
+
+
+
+{\ttfamily \#include $<$Lms\+Course\+Controller\+Base.\+h$>$}
+
+Inheritance diagram for Lms\+Course\+Controller\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_lms_course_controller_base}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_lms_course_controller_base_a01ac601ec9b75f8e2ad96b20f70ca116}{get\+One}} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback, Course\+::\+Primary\+Key\+Type \&\&id)
+\item 
+\mbox{\Hypertarget{class_lms_course_controller_base_aa1242cae099b2d99d474c6d3589cd6bb}\label{class_lms_course_controller_base_aa1242cae099b2d99d474c6d3589cd6bb}} 
+void {\bfseries update\+One} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback, Course\+::\+Primary\+Key\+Type \&\&id)
+\item 
+\mbox{\Hypertarget{class_lms_course_controller_base_a5b299974f9d316f664844c97263d0301}\label{class_lms_course_controller_base_a5b299974f9d316f664844c97263d0301}} 
+void {\bfseries delete\+One} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback, Course\+::\+Primary\+Key\+Type \&\&id)
+\item 
+\mbox{\Hypertarget{class_lms_course_controller_base_a2585d2fc0080ac6a405bd54847a5876b}\label{class_lms_course_controller_base_a2585d2fc0080ac6a405bd54847a5876b}} 
+void {\bfseries get} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback)
+\item 
+\mbox{\Hypertarget{class_lms_course_controller_base_ad6d8c0519ad7507587505965c5924919}\label{class_lms_course_controller_base_ad6d8c0519ad7507587505965c5924919}} 
+void {\bfseries create} (const Http\+Request\+Ptr \&req, std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&callback)
+\item 
+\mbox{\Hypertarget{class_lms_course_controller_base_a7233371dd2261721accafb845230b20f}\label{class_lms_course_controller_base_a7233371dd2261721accafb845230b20f}} 
+orm\+::\+Db\+Client\+Ptr {\bfseries get\+Db\+Client} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lms_course_controller_base_a756277552bf91ac1e4adbd4f3117561f}{Lms\+Course\+Controller\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Ensure that subclasses inherited from this class are instantiated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_lms_course_controller_base_a24753d9ac2ea16597d5c336c832e45aa}\label{class_lms_course_controller_base_a24753d9ac2ea16597d5c336c832e45aa}} 
+const std\+::string {\bfseries db\+Client\+Name\+\_\+} \{\char`\"{}mysql\+\_\+client\char`\"{}\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is a restful API controller for reading and writing the course table. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_lms_course_controller_base_a756277552bf91ac1e4adbd4f3117561f}\label{class_lms_course_controller_base_a756277552bf91ac1e4adbd4f3117561f}} 
+\index{LmsCourseControllerBase@{LmsCourseControllerBase}!LmsCourseControllerBase@{LmsCourseControllerBase}}
+\index{LmsCourseControllerBase@{LmsCourseControllerBase}!LmsCourseControllerBase@{LmsCourseControllerBase}}
+\doxysubsubsection{\texorpdfstring{LmsCourseControllerBase()}{LmsCourseControllerBase()}}
+{\footnotesize\ttfamily Lms\+Course\+Controller\+Base\+::\+Lms\+Course\+Controller\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Ensure that subclasses inherited from this class are instantiated. 
+
+The items in the vector are aliases of column names in the table. if one item is set to an empty string, the related column is not sent to clients.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lms_course_controller_base_a01ac601ec9b75f8e2ad96b20f70ca116}\label{class_lms_course_controller_base_a01ac601ec9b75f8e2ad96b20f70ca116}} 
+\index{LmsCourseControllerBase@{LmsCourseControllerBase}!getOne@{getOne}}
+\index{getOne@{getOne}!LmsCourseControllerBase@{LmsCourseControllerBase}}
+\doxysubsubsection{\texorpdfstring{getOne()}{getOne()}}
+{\footnotesize\ttfamily void Lms\+Course\+Controller\+Base\+::get\+One (\begin{DoxyParamCaption}\item[{const Http\+Request\+Ptr \&}]{req,  }\item[{std\+::function$<$ void(const Http\+Response\+Ptr \&)$>$ \&\&}]{callback,  }\item[{Course\+::\+Primary\+Key\+Type \&\&}]{id }\end{DoxyParamCaption})}
+
+Lms\+Course\+Controller\+Base.\+cc 

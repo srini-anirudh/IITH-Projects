@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+      <title>Learning Management System</title>
+     <link rel="stylesheet" type="text/css" href="External_css.css" media="screen">
+     <style type="text/css" media="all">
+      btn{
+               align:center;
+            }
+      
+    article1 div.cl1 h2{
+                           float:left;
+                       }
+    article2 div.cl2{
+                        width: 46%;
+                        margin-left:auto;
+                        margin-right:auto;
+                  }
+     
+          
+      </style>
+</head>
+
+
+<body>
+      <header> 
+             <div class="C2">
+              <h3>AYAS LEARNING MANAGEMENT SYSTEM</h3>
+              <h1>Logged in as username</h1>
+             </div>
+             <div class="C1">
+              <a href="login_page.html">Logout</a>
+              
+              <ul>
+              <li><a href="About_us.html">About us</a></li>
+              <li><a href="Home.html">Home</a></li>
+              </ul>
+             
+             </div>
+             <script type="text/javascript">
+                function fn1()
+                {
+                     var str =document.getElementById("text1").value;
+                     //alert("You have joined the class with with code:" +str);
+                }
+
+             </script>
+              
+      </header>
+      <section>
+                <article1>
+                <div class="cl1">
+                <h2>Enrolled Courses</h2>
+               <br><br><br>
+		<ul>
+                    <li><a href="#Course-1">Course-1</a></li>
+                    <li><a href="#Course-2">Course-2</a></li>
+                    <li><a href="#Course-3">Course-3</a></li>
+                    <li><a href="#Course-4">Course-4</a></li>
+                    <li><a href="#Course-5">Course-5</a></li>
+                </ul>
+                </div>
+                
+                </article1>
+                <article2>
+                <div class="cl2">
+                
+                <h2>Want To Join A Course</h2>
+                <text>Enter Course-ID:</text>
+                <input id="text1" placeholder="Enter course id">
+                 <br><br>
+                <btn>
+                <button onclick="fn1()" id="btn1">Join</button>
+                </btn>
+                
+                </div>
+                </article2>
+      </section>
+</body>
+
+
+</html>

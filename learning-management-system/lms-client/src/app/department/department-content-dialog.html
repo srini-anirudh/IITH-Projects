@@ -1,0 +1,18 @@
+<h2 mat-dialog-title>Department</h2>
+<div mat-dialog-content class="mat-typography">
+    <form class="department-form">
+        <div mat-form-field class="department-full-width" appearance="fill">
+          <div mat-label>Department Name</div>
+          <input matInput placeholder="Name" value="{{data.name}}">
+        </div>
+      
+        <div mat-form-field class="department-full-width" appearance="fill">
+          <div mat-label>Department Code</div>
+          <input matInput placeholder="Code" value="{{data.code}}">
+        </div>
+    </form>      
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button mat-dialog-close>Ok</button>
+</div>

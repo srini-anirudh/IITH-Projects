@@ -12,3 +12,11 @@ Read the problem statement [here](https://drive.google.com/file/d/1Ppkx6Iz7R2zpg
 **How to use:** Use the notebooks for analysis and frontend/package.json for the UI prototype.
 
 **Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.
+
+## Current Layout
+
+- `src/` - optimization, DQM, and mail/helper scripts.
+- `notebooks/` - exploratory and final notebooks.
+- `data/scores/` - scoring data and dataset helpers.
+- `backend/`, `frontend/`, and `lp/` - app and linear-programming components retained as separate modules.
+

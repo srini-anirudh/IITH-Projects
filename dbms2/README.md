@@ -8,3 +8,10 @@
 **How to use:** Compile the C++ sources with a modern C++ compiler; start from parser.cpp or parse_sqlready.cpp depending on the experiment.
 
 **Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.
+
+## Current Layout
+
+- `src/` - parser implementation and shared headers.
+- `tests/` - C++ test/driver program.
+- `data/` - schema spreadsheet and supporting project data.
+

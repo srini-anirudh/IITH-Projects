@@ -8,3 +8,12 @@ Contributers:
 3) Anirudh (the good boi)
 4) Ojjas (not Ojas)
 5) Aman (somehow mr.elan...)
+## Repository Notes
+
+**Project type:** Fabrication archive
+
+**Summary:** Digital fabrication project deliverables, CAD parts, STL assets, presentations, and media.
+
+**How to use:** No code build is required; open the CAD, STL, PDF, and presentation assets with their respective tools.
+
+**Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.

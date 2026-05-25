@@ -62,3 +62,12 @@ The following people have contributed to this project:
 
 - [@anirudh-srini](https://github.com/anirudh-srini)
 - [@Flash1020](https://github.com/Flash1020)
+## Repository Notes
+
+**Project type:** ML research code
+
+**Summary:** Neuro-inspired Gaussian mixture model and fuzzy clustering experiments with scripts and notebooks.
+
+**How to use:** Install requirements.txt, then run scripts under code/scripts or notebooks under code/notebooks.
+
+**Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.

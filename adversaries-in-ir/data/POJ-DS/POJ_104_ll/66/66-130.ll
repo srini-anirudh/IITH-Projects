@@ -1,0 +1,193 @@
+; ModuleID = 'POJ-104-source/66/66-130.cpp'
+source_filename = "POJ-104-source/66/66-130.cpp"
+target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-pc-linux-gnu"
+
+%"class.std::ios_base::Init" = type { i8 }
+
+@_ZStL8__ioinit = internal global %"class.std::ios_base::Init" zeroinitializer, align 1
+@__dso_handle = external hidden global i8
+@__const.main.s = private unnamed_addr constant [13 x i64] [i64 0, i64 31, i64 28, i64 31, i64 30, i64 31, i64 30, i64 31, i64 31, i64 30, i64 31, i64 30, i64 31], align 16
+@.str = private unnamed_addr constant [9 x i8] c"%d %d %d\00", align 1
+@.str.1 = private unnamed_addr constant [5 x i8] c"Sun.\00", align 1
+@.str.2 = private unnamed_addr constant [5 x i8] c"Mon.\00", align 1
+@.str.3 = private unnamed_addr constant [5 x i8] c"Tue.\00", align 1
+@.str.4 = private unnamed_addr constant [5 x i8] c"Wed.\00", align 1
+@.str.5 = private unnamed_addr constant [5 x i8] c"Thu.\00", align 1
+@.str.6 = private unnamed_addr constant [5 x i8] c"Fri.\00", align 1
+@.str.7 = private unnamed_addr constant [5 x i8] c"Sat.\00", align 1
+@llvm.global_ctors = appending global [1 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @_GLOBAL__sub_I_66_130.cpp, i8* null }]
+
+; Function Attrs: noinline uwtable
+define internal void @__cxx_global_var_init() #0 section ".text.startup" {
+  call void @_ZNSt8ios_base4InitC1Ev(%"class.std::ios_base::Init"* @_ZStL8__ioinit)
+  %1 = call i32 @__cxa_atexit(void (i8*)* bitcast (void (%"class.std::ios_base::Init"*)* @_ZNSt8ios_base4InitD1Ev to void (i8*)*), i8* getelementptr inbounds (%"class.std::ios_base::Init", %"class.std::ios_base::Init"* @_ZStL8__ioinit, i32 0, i32 0), i8* @__dso_handle) #3
+  ret void
+}
+
+declare dso_local void @_ZNSt8ios_base4InitC1Ev(%"class.std::ios_base::Init"*) unnamed_addr #1
+
+; Function Attrs: nounwind
+declare dso_local void @_ZNSt8ios_base4InitD1Ev(%"class.std::ios_base::Init"*) unnamed_addr #2
+
+; Function Attrs: nounwind
+declare dso_local i32 @__cxa_atexit(void (i8*)*, i8*, i8*) #3
+
+; Function Attrs: noinline norecurse uwtable
+define dso_local i32 @main() #4 {
+  %1 = alloca i32, align 4
+  %2 = alloca i64, align 8
+  %3 = alloca i64, align 8
+  %4 = alloca i64, align 8
+  %5 = alloca i64, align 8
+  %6 = alloca i64, align 8
+  %7 = alloca i64, align 8
+  %8 = alloca i64, align 8
+  %9 = alloca i64, align 8
+  %10 = alloca i64, align 8
+  %11 = alloca [13 x i64], align 16
+  store i32 0, i32* %1, align 4
+  %12 = bitcast [13 x i64]* %11 to i8*
+  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 16 %12, i8* align 16 bitcast ([13 x i64]* @__const.main.s to i8*), i64 104, i1 false)
+  %13 = call i32 (i8*, ...) @scanf(i8* getelementptr inbounds ([9 x i8], [9 x i8]* @.str, i64 0, i64 0), i64* %2, i64* %3, i64* %4)
+  %14 = load i64, i64* %2, align 8
+  %15 = sub i64 %14, 1
+  %16 = udiv i64 %15, 4
+  %17 = load i64, i64* %2, align 8
+  %18 = sub i64 %17, 1
+  %19 = udiv i64 %18, 100
+  %20 = sub i64 %16, %19
+  %21 = load i64, i64* %2, align 8
+  %22 = sub i64 %21, 1
+  %23 = udiv i64 %22, 400
+  %24 = add i64 %20, %23
+  store i64 %24, i64* %6, align 8
+  %25 = load i64, i64* %2, align 8
+  %26 = urem i64 %25, 4
+  %27 = icmp eq i64 %26, 0
+  br i1 %27, label %28, label %32
+
+28:                                               ; preds = %0
+  %29 = load i64, i64* %2, align 8
+  %30 = urem i64 %29, 100
+  %31 = icmp ne i64 %30, 0
+  br i1 %31, label %36, label %32
+
+32:                                               ; preds = %28, %0
+  %33 = load i64, i64* %2, align 8
+  %34 = urem i64 %33, 400
+  %35 = icmp eq i64 %34, 0
+  br i1 %35, label %36, label %38
+
+36:                                               ; preds = %32, %28
+  %37 = getelementptr inbounds [13 x i64], [13 x i64]* %11, i64 0, i64 2
+  store i64 29, i64* %37, align 16
+  br label %38
+
+38:                                               ; preds = %36, %32
+  store i64 0, i64* %8, align 8
+  store i64 1, i64* %7, align 8
+  br label %39
+
+39:                                               ; preds = %49, %38
+  %40 = load i64, i64* %7, align 8
+  %41 = load i64, i64* %3, align 8
+  %42 = icmp ult i64 %40, %41
+  br i1 %42, label %43, label %52
+
+43:                                               ; preds = %39
+  %44 = load i64, i64* %8, align 8
+  %45 = load i64, i64* %7, align 8
+  %46 = getelementptr inbounds [13 x i64], [13 x i64]* %11, i64 0, i64 %45
+  %47 = load i64, i64* %46, align 8
+  %48 = add i64 %44, %47
+  store i64 %48, i64* %8, align 8
+  br label %49
+
+49:                                               ; preds = %43
+  %50 = load i64, i64* %7, align 8
+  %51 = add i64 %50, 1
+  store i64 %51, i64* %7, align 8
+  br label %39
+
+52:                                               ; preds = %39
+  %53 = load i64, i64* %2, align 8
+  %54 = sub i64 %53, 1
+  %55 = load i64, i64* %6, align 8
+  %56 = add i64 %54, %55
+  %57 = load i64, i64* %8, align 8
+  %58 = add i64 %56, %57
+  %59 = load i64, i64* %4, align 8
+  %60 = add i64 %58, %59
+  store i64 %60, i64* %9, align 8
+  %61 = load i64, i64* %9, align 8
+  %62 = urem i64 %61, 7
+  store i64 %62, i64* %10, align 8
+  %63 = load i64, i64* %10, align 8
+  switch i64 %63, label %78 [
+    i64 0, label %64
+    i64 1, label %66
+    i64 2, label %68
+    i64 3, label %70
+    i64 4, label %72
+    i64 5, label %74
+    i64 6, label %76
+  ]
+
+64:                                               ; preds = %52
+  %65 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.1, i64 0, i64 0))
+  br label %78
+
+66:                                               ; preds = %52
+  %67 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.2, i64 0, i64 0))
+  br label %78
+
+68:                                               ; preds = %52
+  %69 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.3, i64 0, i64 0))
+  br label %78
+
+70:                                               ; preds = %52
+  %71 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.4, i64 0, i64 0))
+  br label %78
+
+72:                                               ; preds = %52
+  %73 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.5, i64 0, i64 0))
+  br label %78
+
+74:                                               ; preds = %52
+  %75 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.6, i64 0, i64 0))
+  br label %78
+
+76:                                               ; preds = %52
+  %77 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.7, i64 0, i64 0))
+  br label %78
+
+78:                                               ; preds = %52, %76, %74, %72, %70, %68, %66, %64
+  ret i32 0
+}
+
+; Function Attrs: argmemonly nounwind willreturn
+declare void @llvm.memcpy.p0i8.p0i8.i64(i8* noalias nocapture writeonly, i8* noalias nocapture readonly, i64, i1 immarg) #5
+
+declare dso_local i32 @scanf(i8*, ...) #1
+
+declare dso_local i32 @printf(i8*, ...) #1
+
+; Function Attrs: noinline uwtable
+define internal void @_GLOBAL__sub_I_66_130.cpp() #0 section ".text.startup" {
+  call void @__cxx_global_var_init()
+  ret void
+}
+
+attributes #0 = { noinline uwtable "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-calls"="false" "frame-pointer"="all" "less-precise-fpmad"="false" "min-legal-vector-width"="0" "no-infs-fp-math"="false" "no-jump-tables"="false" "no-nans-fp-math"="false" "no-signed-zeros-fp-math"="false" "no-trapping-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "unsafe-fp-math"="false" "use-soft-float"="false" }
+attributes #1 = { "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-calls"="false" "frame-pointer"="all" "less-precise-fpmad"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "no-signed-zeros-fp-math"="false" "no-trapping-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "unsafe-fp-math"="false" "use-soft-float"="false" }
+attributes #2 = { nounwind "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-calls"="false" "frame-pointer"="all" "less-precise-fpmad"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "no-signed-zeros-fp-math"="false" "no-trapping-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "unsafe-fp-math"="false" "use-soft-float"="false" }
+attributes #3 = { nounwind }
+attributes #4 = { noinline norecurse uwtable "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-calls"="false" "frame-pointer"="all" "less-precise-fpmad"="false" "min-legal-vector-width"="0" "no-infs-fp-math"="false" "no-jump-tables"="false" "no-nans-fp-math"="false" "no-signed-zeros-fp-math"="false" "no-trapping-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "unsafe-fp-math"="false" "use-soft-float"="false" }
+attributes #5 = { argmemonly nounwind willreturn }
+
+!llvm.module.flags = !{!0}
+!llvm.ident = !{!1}
+
+!0 = !{i32 1, !"wchar_size", i32 4}
+!1 = !{!"Ubuntu clang version 10.0.1-++20200809072545+ef32c611aa2-1~exp1~20200809173142.193"}

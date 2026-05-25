@@ -1,0 +1,7 @@
+[submodule "llvm10"]
+	path = llvm10
+	url = https://github.com/IITH-Compilers/IR2Vec-Binaries.git
+[submodule "IR2Vec-Binaries"]
+	path = IR2Vec-Binaries
+	url = https://github.com/IITH-Compilers/IR2Vec-Binaries.git
+	branch = llvm10

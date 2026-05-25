@@ -1,0 +1,274 @@
+; ModuleID = 'POJ-104-source/56/56-619.cpp'
+source_filename = "POJ-104-source/56/56-619.cpp"
+target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-pc-linux-gnu"
+
+%"class.std::ios_base::Init" = type { i8 }
+
+@_ZStL8__ioinit = internal global %"class.std::ios_base::Init" zeroinitializer, align 1
+@__dso_handle = external hidden global i8
+@.str = private unnamed_addr constant [3 x i8] c"%d\00", align 1
+@llvm.global_ctors = appending global [1 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @_GLOBAL__sub_I_56_619.cpp, i8* null }]
+
+; Function Attrs: noinline uwtable
+define internal void @__cxx_global_var_init() #0 section ".text.startup" {
+  call void @_ZNSt8ios_base4InitC1Ev(%"class.std::ios_base::Init"* @_ZStL8__ioinit)
+  %1 = call i32 @__cxa_atexit(void (i8*)* bitcast (void (%"class.std::ios_base::Init"*)* @_ZNSt8ios_base4InitD1Ev to void (i8*)*), i8* getelementptr inbounds (%"class.std::ios_base::Init", %"class.std::ios_base::Init"* @_ZStL8__ioinit, i32 0, i32 0), i8* @__dso_handle) #3
+  ret void
+}
+
+declare dso_local void @_ZNSt8ios_base4InitC1Ev(%"class.std::ios_base::Init"*) unnamed_addr #1
+
+; Function Attrs: nounwind
+declare dso_local void @_ZNSt8ios_base4InitD1Ev(%"class.std::ios_base::Init"*) unnamed_addr #2
+
+; Function Attrs: nounwind
+declare dso_local i32 @__cxa_atexit(void (i8*)*, i8*, i8*) #3
+
+; Function Attrs: noinline norecurse uwtable
+define dso_local i32 @main() #4 {
+  %1 = alloca i32, align 4
+  %2 = alloca i32, align 4
+  %3 = alloca i32, align 4
+  %4 = alloca i32, align 4
+  %5 = alloca i32, align 4
+  %6 = alloca i32, align 4
+  %7 = alloca i32, align 4
+  %8 = alloca i32, align 4
+  store i32 0, i32* %1, align 4
+  %9 = call i32 (i8*, ...) @scanf(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str, i64 0, i64 0), i32* %2)
+  %10 = load i32, i32* %2, align 4
+  %11 = sdiv i32 %10, 10000
+  store i32 %11, i32* %4, align 4
+  %12 = load i32, i32* %2, align 4
+  %13 = load i32, i32* %4, align 4
+  %14 = mul nsw i32 %13, 10000
+  %15 = sub nsw i32 %12, %14
+  %16 = sdiv i32 %15, 1000
+  store i32 %16, i32* %5, align 4
+  %17 = load i32, i32* %2, align 4
+  %18 = load i32, i32* %4, align 4
+  %19 = mul nsw i32 %18, 10000
+  %20 = sub nsw i32 %17, %19
+  %21 = load i32, i32* %5, align 4
+  %22 = mul nsw i32 %21, 1000
+  %23 = sub nsw i32 %20, %22
+  %24 = sdiv i32 %23, 100
+  store i32 %24, i32* %6, align 4
+  %25 = load i32, i32* %2, align 4
+  %26 = load i32, i32* %4, align 4
+  %27 = mul nsw i32 %26, 10000
+  %28 = sub nsw i32 %25, %27
+  %29 = load i32, i32* %5, align 4
+  %30 = mul nsw i32 %29, 1000
+  %31 = sub nsw i32 %28, %30
+  %32 = load i32, i32* %6, align 4
+  %33 = mul nsw i32 %32, 100
+  %34 = sub nsw i32 %31, %33
+  %35 = sdiv i32 %34, 10
+  store i32 %35, i32* %7, align 4
+  %36 = load i32, i32* %2, align 4
+  %37 = load i32, i32* %4, align 4
+  %38 = mul nsw i32 %37, 10000
+  %39 = sub nsw i32 %36, %38
+  %40 = load i32, i32* %5, align 4
+  %41 = mul nsw i32 %40, 1000
+  %42 = sub nsw i32 %39, %41
+  %43 = load i32, i32* %6, align 4
+  %44 = mul nsw i32 %43, 100
+  %45 = sub nsw i32 %42, %44
+  %46 = load i32, i32* %7, align 4
+  %47 = mul nsw i32 %46, 10
+  %48 = sub nsw i32 %45, %47
+  store i32 %48, i32* %8, align 4
+  %49 = load i32, i32* %4, align 4
+  %50 = icmp eq i32 %49, 0
+  br i1 %50, label %51, label %65
+
+51:                                               ; preds = %0
+  %52 = load i32, i32* %5, align 4
+  %53 = icmp eq i32 %52, 0
+  br i1 %53, label %54, label %65
+
+54:                                               ; preds = %51
+  %55 = load i32, i32* %6, align 4
+  %56 = icmp eq i32 %55, 0
+  br i1 %56, label %57, label %65
+
+57:                                               ; preds = %54
+  %58 = load i32, i32* %7, align 4
+  %59 = icmp eq i32 %58, 0
+  br i1 %59, label %60, label %65
+
+60:                                               ; preds = %57
+  %61 = load i32, i32* %8, align 4
+  %62 = icmp sgt i32 %61, 0
+  br i1 %62, label %63, label %65
+
+63:                                               ; preds = %60
+  %64 = load i32, i32* %8, align 4
+  store i32 %64, i32* %3, align 4
+  br label %151
+
+65:                                               ; preds = %60, %57, %54, %51, %0
+  %66 = load i32, i32* %4, align 4
+  %67 = icmp eq i32 %66, 0
+  br i1 %67, label %68, label %85
+
+68:                                               ; preds = %65
+  %69 = load i32, i32* %5, align 4
+  %70 = icmp eq i32 %69, 0
+  br i1 %70, label %71, label %85
+
+71:                                               ; preds = %68
+  %72 = load i32, i32* %6, align 4
+  %73 = icmp eq i32 %72, 0
+  br i1 %73, label %74, label %85
+
+74:                                               ; preds = %71
+  %75 = load i32, i32* %7, align 4
+  %76 = icmp sgt i32 %75, 0
+  br i1 %76, label %77, label %85
+
+77:                                               ; preds = %74
+  %78 = load i32, i32* %8, align 4
+  %79 = icmp sgt i32 %78, 0
+  br i1 %79, label %80, label %85
+
+80:                                               ; preds = %77
+  %81 = load i32, i32* %8, align 4
+  %82 = mul nsw i32 %81, 10
+  %83 = load i32, i32* %7, align 4
+  %84 = add nsw i32 %82, %83
+  store i32 %84, i32* %3, align 4
+  br label %150
+
+85:                                               ; preds = %77, %74, %71, %68, %65
+  %86 = load i32, i32* %4, align 4
+  %87 = icmp eq i32 %86, 0
+  br i1 %87, label %88, label %108
+
+88:                                               ; preds = %85
+  %89 = load i32, i32* %5, align 4
+  %90 = icmp eq i32 %89, 0
+  br i1 %90, label %91, label %108
+
+91:                                               ; preds = %88
+  %92 = load i32, i32* %6, align 4
+  %93 = icmp sgt i32 %92, 0
+  br i1 %93, label %94, label %108
+
+94:                                               ; preds = %91
+  %95 = load i32, i32* %7, align 4
+  %96 = icmp sgt i32 %95, 0
+  br i1 %96, label %97, label %108
+
+97:                                               ; preds = %94
+  %98 = load i32, i32* %8, align 4
+  %99 = icmp sgt i32 %98, 0
+  br i1 %99, label %100, label %108
+
+100:                                              ; preds = %97
+  %101 = load i32, i32* %8, align 4
+  %102 = mul nsw i32 %101, 100
+  %103 = load i32, i32* %7, align 4
+  %104 = mul nsw i32 %103, 10
+  %105 = add nsw i32 %102, %104
+  %106 = load i32, i32* %6, align 4
+  %107 = add nsw i32 %105, %106
+  store i32 %107, i32* %3, align 4
+  br label %149
+
+108:                                              ; preds = %97, %94, %91, %88, %85
+  %109 = load i32, i32* %4, align 4
+  %110 = icmp eq i32 %109, 0
+  br i1 %110, label %111, label %134
+
+111:                                              ; preds = %108
+  %112 = load i32, i32* %5, align 4
+  %113 = icmp sgt i32 %112, 0
+  br i1 %113, label %114, label %134
+
+114:                                              ; preds = %111
+  %115 = load i32, i32* %6, align 4
+  %116 = icmp sgt i32 %115, 0
+  br i1 %116, label %117, label %134
+
+117:                                              ; preds = %114
+  %118 = load i32, i32* %7, align 4
+  %119 = icmp sgt i32 %118, 0
+  br i1 %119, label %120, label %134
+
+120:                                              ; preds = %117
+  %121 = load i32, i32* %8, align 4
+  %122 = icmp sgt i32 %121, 0
+  br i1 %122, label %123, label %134
+
+123:                                              ; preds = %120
+  %124 = load i32, i32* %8, align 4
+  %125 = mul nsw i32 %124, 1000
+  %126 = load i32, i32* %7, align 4
+  %127 = mul nsw i32 %126, 100
+  %128 = add nsw i32 %125, %127
+  %129 = load i32, i32* %6, align 4
+  %130 = mul nsw i32 %129, 10
+  %131 = add nsw i32 %128, %130
+  %132 = load i32, i32* %5, align 4
+  %133 = add nsw i32 %131, %132
+  store i32 %133, i32* %3, align 4
+  br label %148
+
+134:                                              ; preds = %120, %117, %114, %111, %108
+  %135 = load i32, i32* %8, align 4
+  %136 = mul nsw i32 %135, 10000
+  %137 = load i32, i32* %7, align 4
+  %138 = mul nsw i32 %137, 1000
+  %139 = add nsw i32 %136, %138
+  %140 = load i32, i32* %6, align 4
+  %141 = mul nsw i32 %140, 100
+  %142 = add nsw i32 %139, %141
+  %143 = load i32, i32* %5, align 4
+  %144 = mul nsw i32 %143, 10
+  %145 = add nsw i32 %142, %144
+  %146 = load i32, i32* %4, align 4
+  %147 = add nsw i32 %145, %146
+  store i32 %147, i32* %3, align 4
+  br label %148
+
+148:                                              ; preds = %134, %123
+  br label %149
+
+149:                                              ; preds = %148, %100
+  br label %150
+
+150:                                              ; preds = %149, %80
+  br label %151
+
+151:                                              ; preds = %150, %63
+  %152 = load i32, i32* %3, align 4
+  %153 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str, i64 0, i64 0), i32 %152)
+  %154 = load i32, i32* %1, align 4
+  ret i32 %154
+}
+
+declare dso_local i32 @scanf(i8*, ...) #1
+
+declare dso_local i32 @printf(i8*, ...) #1
+
+; Function Attrs: noinline uwtable
+define internal void @_GLOBAL__sub_I_56_619.cpp() #0 section ".text.startup" {
+  call void @__cxx_global_var_init()
+  ret void
+}
+
+attributes #0 = { noinline uwtable "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-calls"="false" "frame-pointer"="all" "less-precise-fpmad"="false" "min-legal-vector-width"="0" "no-infs-fp-math"="false" "no-jump-tables"="false" "no-nans-fp-math"="false" "no-signed-zeros-fp-math"="false" "no-trapping-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "unsafe-fp-math"="false" "use-soft-float"="false" }
+attributes #1 = { "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-calls"="false" "frame-pointer"="all" "less-precise-fpmad"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "no-signed-zeros-fp-math"="false" "no-trapping-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "unsafe-fp-math"="false" "use-soft-float"="false" }
+attributes #2 = { nounwind "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-calls"="false" "frame-pointer"="all" "less-precise-fpmad"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "no-signed-zeros-fp-math"="false" "no-trapping-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "unsafe-fp-math"="false" "use-soft-float"="false" }
+attributes #3 = { nounwind }
+attributes #4 = { noinline norecurse uwtable "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-calls"="false" "frame-pointer"="all" "less-precise-fpmad"="false" "min-legal-vector-width"="0" "no-infs-fp-math"="false" "no-jump-tables"="false" "no-nans-fp-math"="false" "no-signed-zeros-fp-math"="false" "no-trapping-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "unsafe-fp-math"="false" "use-soft-float"="false" }
+
+!llvm.module.flags = !{!0}
+!llvm.ident = !{!1}
+
+!0 = !{i32 1, !"wchar_size", i32 4}
+!1 = !{!"Ubuntu clang version 10.0.1-++20200809072545+ef32c611aa2-1~exp1~20200809173142.193"}

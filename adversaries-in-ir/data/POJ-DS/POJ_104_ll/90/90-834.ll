@@ -1,0 +1,287 @@
+; ModuleID = 'POJ-104-source/90/90-834.cpp'
+source_filename = "POJ-104-source/90/90-834.cpp"
+target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-pc-linux-gnu"
+
+%"class.std::ios_base::Init" = type { i8 }
+
+@_ZStL8__ioinit = internal global %"class.std::ios_base::Init" zeroinitializer, align 1
+@__dso_handle = external hidden global i8
+@.str = private unnamed_addr constant [3 x i8] c"%d\00", align 1
+@.str.1 = private unnamed_addr constant [5 x i8] c"%d%d\00", align 1
+@.str.2 = private unnamed_addr constant [4 x i8] c"%d\0A\00", align 1
+@llvm.global_ctors = appending global [1 x { i32, void ()*, i8* }] [{ i32, void ()*, i8* } { i32 65535, void ()* @_GLOBAL__sub_I_90_834.cpp, i8* null }]
+
+; Function Attrs: noinline uwtable
+define internal void @__cxx_global_var_init() #0 section ".text.startup" {
+  call void @_ZNSt8ios_base4InitC1Ev(%"class.std::ios_base::Init"* @_ZStL8__ioinit)
+  %1 = call i32 @__cxa_atexit(void (i8*)* bitcast (void (%"class.std::ios_base::Init"*)* @_ZNSt8ios_base4InitD1Ev to void (i8*)*), i8* getelementptr inbounds (%"class.std::ios_base::Init", %"class.std::ios_base::Init"* @_ZStL8__ioinit, i32 0, i32 0), i8* @__dso_handle) #3
+  ret void
+}
+
+declare dso_local void @_ZNSt8ios_base4InitC1Ev(%"class.std::ios_base::Init"*) unnamed_addr #1
+
+; Function Attrs: nounwind
+declare dso_local void @_ZNSt8ios_base4InitD1Ev(%"class.std::ios_base::Init"*) unnamed_addr #2
+
+; Function Attrs: nounwind
+declare dso_local i32 @__cxa_atexit(void (i8*)*, i8*, i8*) #3
+
+; Function Attrs: noinline norecurse uwtable
+define dso_local i32 @main() #4 {
+  %1 = alloca i32, align 4
+  %2 = alloca [30 x [30 x i32]], align 16
+  %3 = alloca i32, align 4
+  %4 = alloca i32, align 4
+  %5 = alloca i32, align 4
+  %6 = alloca i32, align 4
+  %7 = alloca i32, align 4
+  %8 = alloca i32, align 4
+  store i32 0, i32* %1, align 4
+  %9 = call i32 (i8*, ...) @scanf(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str, i64 0, i64 0), i32* %8)
+  store i32 1, i32* %3, align 4
+  br label %10
+
+10:                                               ; preds = %144, %0
+  %11 = load i32, i32* %3, align 4
+  %12 = load i32, i32* %8, align 4
+  %13 = icmp sle i32 %11, %12
+  br i1 %13, label %14, label %147
+
+14:                                               ; preds = %10
+  %15 = call i32 (i8*, ...) @scanf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.1, i64 0, i64 0), i32* %6, i32* %7)
+  store i32 0, i32* %4, align 4
+  br label %16
+
+16:                                               ; preds = %36, %14
+  %17 = load i32, i32* %4, align 4
+  %18 = load i32, i32* %7, align 4
+  %19 = icmp sle i32 %17, %18
+  br i1 %19, label %20, label %39
+
+20:                                               ; preds = %16
+  store i32 0, i32* %5, align 4
+  br label %21
+
+21:                                               ; preds = %32, %20
+  %22 = load i32, i32* %5, align 4
+  %23 = load i32, i32* %6, align 4
+  %24 = icmp sle i32 %22, %23
+  br i1 %24, label %25, label %35
+
+25:                                               ; preds = %21
+  %26 = load i32, i32* %4, align 4
+  %27 = sext i32 %26 to i64
+  %28 = getelementptr inbounds [30 x [30 x i32]], [30 x [30 x i32]]* %2, i64 0, i64 %27
+  %29 = load i32, i32* %5, align 4
+  %30 = sext i32 %29 to i64
+  %31 = getelementptr inbounds [30 x i32], [30 x i32]* %28, i64 0, i64 %30
+  store i32 0, i32* %31, align 4
+  br label %32
+
+32:                                               ; preds = %25
+  %33 = load i32, i32* %5, align 4
+  %34 = add nsw i32 %33, 1
+  store i32 %34, i32* %5, align 4
+  br label %21
+
+35:                                               ; preds = %21
+  br label %36
+
+36:                                               ; preds = %35
+  %37 = load i32, i32* %4, align 4
+  %38 = add nsw i32 %37, 1
+  store i32 %38, i32* %4, align 4
+  br label %16
+
+39:                                               ; preds = %16
+  store i32 1, i32* %4, align 4
+  br label %40
+
+40:                                               ; preds = %53, %39
+  %41 = load i32, i32* %4, align 4
+  %42 = load i32, i32* %7, align 4
+  %43 = icmp sle i32 %41, %42
+  br i1 %43, label %44, label %56
+
+44:                                               ; preds = %40
+  %45 = load i32, i32* %4, align 4
+  %46 = sext i32 %45 to i64
+  %47 = getelementptr inbounds [30 x [30 x i32]], [30 x [30 x i32]]* %2, i64 0, i64 %46
+  %48 = getelementptr inbounds [30 x i32], [30 x i32]* %47, i64 0, i64 0
+  store i32 1, i32* %48, align 8
+  %49 = load i32, i32* %4, align 4
+  %50 = sext i32 %49 to i64
+  %51 = getelementptr inbounds [30 x [30 x i32]], [30 x [30 x i32]]* %2, i64 0, i64 %50
+  %52 = getelementptr inbounds [30 x i32], [30 x i32]* %51, i64 0, i64 1
+  store i32 1, i32* %52, align 4
+  br label %53
+
+53:                                               ; preds = %44
+  %54 = load i32, i32* %4, align 4
+  %55 = add nsw i32 %54, 1
+  store i32 %55, i32* %4, align 4
+  br label %40
+
+56:                                               ; preds = %40
+  store i32 1, i32* %4, align 4
+  br label %57
+
+57:                                               ; preds = %70, %56
+  %58 = load i32, i32* %4, align 4
+  %59 = load i32, i32* %6, align 4
+  %60 = icmp sle i32 %58, %59
+  br i1 %60, label %61, label %73
+
+61:                                               ; preds = %57
+  %62 = getelementptr inbounds [30 x [30 x i32]], [30 x [30 x i32]]* %2, i64 0, i64 1
+  %63 = load i32, i32* %4, align 4
+  %64 = sext i32 %63 to i64
+  %65 = getelementptr inbounds [30 x i32], [30 x i32]* %62, i64 0, i64 %64
+  store i32 1, i32* %65, align 4
+  %66 = getelementptr inbounds [30 x [30 x i32]], [30 x [30 x i32]]* %2, i64 0, i64 0
+  %67 = load i32, i32* %4, align 4
+  %68 = sext i32 %67 to i64
+  %69 = getelementptr inbounds [30 x i32], [30 x i32]* %66, i64 0, i64 %68
+  store i32 1, i32* %69, align 4
+  br label %70
+
+70:                                               ; preds = %61
+  %71 = load i32, i32* %4, align 4
+  %72 = add nsw i32 %71, 1
+  store i32 %72, i32* %4, align 4
+  br label %57
+
+73:                                               ; preds = %57
+  store i32 2, i32* %4, align 4
+  br label %74
+
+74:                                               ; preds = %132, %73
+  %75 = load i32, i32* %4, align 4
+  %76 = load i32, i32* %7, align 4
+  %77 = icmp sle i32 %75, %76
+  br i1 %77, label %78, label %135
+
+78:                                               ; preds = %74
+  store i32 2, i32* %5, align 4
+  br label %79
+
+79:                                               ; preds = %128, %78
+  %80 = load i32, i32* %5, align 4
+  %81 = load i32, i32* %6, align 4
+  %82 = icmp sle i32 %80, %81
+  br i1 %82, label %83, label %131
+
+83:                                               ; preds = %79
+  %84 = load i32, i32* %5, align 4
+  %85 = load i32, i32* %4, align 4
+  %86 = icmp sge i32 %84, %85
+  br i1 %86, label %87, label %112
+
+87:                                               ; preds = %83
+  %88 = load i32, i32* %4, align 4
+  %89 = sub nsw i32 %88, 1
+  %90 = sext i32 %89 to i64
+  %91 = getelementptr inbounds [30 x [30 x i32]], [30 x [30 x i32]]* %2, i64 0, i64 %90
+  %92 = load i32, i32* %5, align 4
+  %93 = sext i32 %92 to i64
+  %94 = getelementptr inbounds [30 x i32], [30 x i32]* %91, i64 0, i64 %93
+  %95 = load i32, i32* %94, align 4
+  %96 = load i32, i32* %4, align 4
+  %97 = sext i32 %96 to i64
+  %98 = getelementptr inbounds [30 x [30 x i32]], [30 x [30 x i32]]* %2, i64 0, i64 %97
+  %99 = load i32, i32* %5, align 4
+  %100 = load i32, i32* %4, align 4
+  %101 = sub nsw i32 %99, %100
+  %102 = sext i32 %101 to i64
+  %103 = getelementptr inbounds [30 x i32], [30 x i32]* %98, i64 0, i64 %102
+  %104 = load i32, i32* %103, align 4
+  %105 = add nsw i32 %95, %104
+  %106 = load i32, i32* %4, align 4
+  %107 = sext i32 %106 to i64
+  %108 = getelementptr inbounds [30 x [30 x i32]], [30 x [30 x i32]]* %2, i64 0, i64 %107
+  %109 = load i32, i32* %5, align 4
+  %110 = sext i32 %109 to i64
+  %111 = getelementptr inbounds [30 x i32], [30 x i32]* %108, i64 0, i64 %110
+  store i32 %105, i32* %111, align 4
+  br label %127
+
+112:                                              ; preds = %83
+  %113 = load i32, i32* %4, align 4
+  %114 = sub nsw i32 %113, 1
+  %115 = sext i32 %114 to i64
+  %116 = getelementptr inbounds [30 x [30 x i32]], [30 x [30 x i32]]* %2, i64 0, i64 %115
+  %117 = load i32, i32* %5, align 4
+  %118 = sext i32 %117 to i64
+  %119 = getelementptr inbounds [30 x i32], [30 x i32]* %116, i64 0, i64 %118
+  %120 = load i32, i32* %119, align 4
+  %121 = load i32, i32* %4, align 4
+  %122 = sext i32 %121 to i64
+  %123 = getelementptr inbounds [30 x [30 x i32]], [30 x [30 x i32]]* %2, i64 0, i64 %122
+  %124 = load i32, i32* %5, align 4
+  %125 = sext i32 %124 to i64
+  %126 = getelementptr inbounds [30 x i32], [30 x i32]* %123, i64 0, i64 %125
+  store i32 %120, i32* %126, align 4
+  br label %127
+
+127:                                              ; preds = %112, %87
+  br label %128
+
+128:                                              ; preds = %127
+  %129 = load i32, i32* %5, align 4
+  %130 = add nsw i32 %129, 1
+  store i32 %130, i32* %5, align 4
+  br label %79
+
+131:                                              ; preds = %79
+  br label %132
+
+132:                                              ; preds = %131
+  %133 = load i32, i32* %4, align 4
+  %134 = add nsw i32 %133, 1
+  store i32 %134, i32* %4, align 4
+  br label %74
+
+135:                                              ; preds = %74
+  %136 = load i32, i32* %7, align 4
+  %137 = sext i32 %136 to i64
+  %138 = getelementptr inbounds [30 x [30 x i32]], [30 x [30 x i32]]* %2, i64 0, i64 %137
+  %139 = load i32, i32* %6, align 4
+  %140 = sext i32 %139 to i64
+  %141 = getelementptr inbounds [30 x i32], [30 x i32]* %138, i64 0, i64 %140
+  %142 = load i32, i32* %141, align 4
+  %143 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str.2, i64 0, i64 0), i32 %142)
+  br label %144
+
+144:                                              ; preds = %135
+  %145 = load i32, i32* %3, align 4
+  %146 = add nsw i32 %145, 1
+  store i32 %146, i32* %3, align 4
+  br label %10
+
+147:                                              ; preds = %10
+  %148 = load i32, i32* %1, align 4
+  ret i32 %148
+}
+
+declare dso_local i32 @scanf(i8*, ...) #1
+
+declare dso_local i32 @printf(i8*, ...) #1
+
+; Function Attrs: noinline uwtable
+define internal void @_GLOBAL__sub_I_90_834.cpp() #0 section ".text.startup" {
+  call void @__cxx_global_var_init()
+  ret void
+}
+
+attributes #0 = { noinline uwtable "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-calls"="false" "frame-pointer"="all" "less-precise-fpmad"="false" "min-legal-vector-width"="0" "no-infs-fp-math"="false" "no-jump-tables"="false" "no-nans-fp-math"="false" "no-signed-zeros-fp-math"="false" "no-trapping-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "unsafe-fp-math"="false" "use-soft-float"="false" }
+attributes #1 = { "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-calls"="false" "frame-pointer"="all" "less-precise-fpmad"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "no-signed-zeros-fp-math"="false" "no-trapping-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "unsafe-fp-math"="false" "use-soft-float"="false" }
+attributes #2 = { nounwind "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-calls"="false" "frame-pointer"="all" "less-precise-fpmad"="false" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "no-signed-zeros-fp-math"="false" "no-trapping-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "unsafe-fp-math"="false" "use-soft-float"="false" }
+attributes #3 = { nounwind }
+attributes #4 = { noinline norecurse uwtable "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-calls"="false" "frame-pointer"="all" "less-precise-fpmad"="false" "min-legal-vector-width"="0" "no-infs-fp-math"="false" "no-jump-tables"="false" "no-nans-fp-math"="false" "no-signed-zeros-fp-math"="false" "no-trapping-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "unsafe-fp-math"="false" "use-soft-float"="false" }
+
+!llvm.module.flags = !{!0}
+!llvm.ident = !{!1}
+
+!0 = !{i32 1, !"wchar_size", i32 4}
+!1 = !{!"Ubuntu clang version 10.0.1-++20200809072545+ef32c611aa2-1~exp1~20200809173142.193"}

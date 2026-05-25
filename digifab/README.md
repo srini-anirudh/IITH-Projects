@@ -17,3 +17,12 @@ Contributers:
 **How to use:** No code build is required; open the CAD, STL, PDF, and presentation assets with their respective tools.
 
 **Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.
+
+## Current Layout
+
+- `assets/cad-project/` - Solid Edge CAD parts and assemblies.
+- `assets/inspiration-files/` - reference STL and inspiration assets.
+- `docs/presentations/` - project decks.
+- `media/images/` and `media/videos/` - renders, photos, and demos.
+- `deliverables/` - zipped submission bundles.
+

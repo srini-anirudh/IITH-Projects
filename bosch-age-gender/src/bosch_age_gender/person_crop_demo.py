@@ -5,13 +5,17 @@ import matplotlib.pyplot as plt
 import pandas as pd
 # from utils import *
 from PIL import Image, ImageDraw, ImageFont
+from pathlib import Path
 
-cap = cv.VideoCapture('cam1.mp4')
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_VIDEO = PROJECT_ROOT / "media" / "samples" / "reservation.mp4"
+
+cap = cv.VideoCapture(str(DEFAULT_VIDEO))
 
 model = torch.hub.load('ultralytics/yolov5', 'yolov5n', pretrained=True)
 model.classes = [0]
 
-# srgan_checkpoint = "./checkpoint_srgan.pth.tar"
+# srgan_checkpoint = PROJECT_ROOT / "models" / "checkpoint_srgan.pth.tar"
 # srgan_generator = torch.load(srgan_checkpoint)['generator']
 # srgan_generator.eval()
 

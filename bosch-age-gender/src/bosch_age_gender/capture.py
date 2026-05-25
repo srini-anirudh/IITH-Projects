@@ -1,7 +1,11 @@
 import numpy as np
 import cv2
+from pathlib import Path
 
-cap = cv2.VideoCapture('reservation.mp4')
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_VIDEO = PROJECT_ROOT / "media" / "samples" / "reservation.mp4"
+
+cap = cv2.VideoCapture(str(DEFAULT_VIDEO))
 
 if(cap.isOpened() == False):
     print("Error")

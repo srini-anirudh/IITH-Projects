@@ -11,9 +11,19 @@ import time
 import pandas as pd
 from argparse import ArgumentParser
 import tensorflow as tf
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+MODELS_DIR = PROJECT_ROOT / "models"
+OUTPUTS_DIR = PROJECT_ROOT / "outputs"
+OUTPUTS_DIR.mkdir(exist_ok=True)
 
 parser = ArgumentParser()
-parser.add_argument('--file',type=str,default='indiancctv.mp4')
+parser.add_argument(
+    '--file',
+    type=str,
+    default=str(PROJECT_ROOT / 'media' / 'samples' / 'reservation.mp4'),
+)
 parser.add_argument('--fr_rate',type=int,default=5)
 
 args = parser.parse_args()
@@ -27,11 +37,11 @@ cap = cv.VideoCapture(args.file)
 model = torch.hub.load('ultralytics/yolov5', 'yolov5n', pretrained=True)
 model.classes = [0]
 face_mod = MTCNN()
-ageProto = "age_deploy.prototxt"
-ageModel = "age_net.caffemodel"
-genderProto = "gender_deploy.prototxt"
-genderModel = "dump.caffemodel"
-# srgan_checkpoint = "./checkpoint_srgan.pth.tar"
+ageProto = str(MODELS_DIR / "age_deploy.prototxt")
+ageModel = str(MODELS_DIR / "age_net.caffemodel")
+genderProto = str(MODELS_DIR / "gender_deploy.prototxt")
+genderModel = str(MODELS_DIR / "dump.caffemodel")
+# srgan_checkpoint = MODELS_DIR / "checkpoint_srgan.pth.tar"
 # srgan_generator = torch.load(srgan_checkpoint)['generator']
 # srgan_generator.eval()
 color = (255, 0, 0)
@@ -44,7 +54,7 @@ columns = ['fr_num','bb_xmin','bb_ymin','bb_height','bb_width','age_min','age_ma
 rslt = pd.DataFrame(columns=columns)
 
 
-b2g = tf.keras.models.load_model('./body2gen/model.h5')
+b2g = tf.keras.models.load_model(str(MODELS_DIR / 'body2gen' / 'model.h5'))
 while True:
 
     ret, frame = cap.read()
@@ -143,4 +153,4 @@ while True:
         break
     cnt = cnt+1
 print(rslt)
-rslt.to_csv('Outputs.csv')
+rslt.to_csv(OUTPUTS_DIR / 'Outputs.csv')

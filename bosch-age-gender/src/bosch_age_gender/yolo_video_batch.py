@@ -5,12 +5,16 @@ import matplotlib
 import tkinter
 import matplotlib.pyplot as plt
 import pandas as pd
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_VIDEO = PROJECT_ROOT / "media" / "samples" / "reservation.mp4"
 
 # print(plt.get_backend())
 model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)    # this line changes matplotlib backend beware lol
 # imgs = ['https://ultralytics.com/images/zidane.jpg']
 imgs = []
-cap = cv.VideoCapture('reservation.mp4')
+cap = cv.VideoCapture(str(DEFAULT_VIDEO))
 # print(cap)
 # if cap.isOpened()==False:
     # print("l lag gaye")

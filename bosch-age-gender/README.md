@@ -37,3 +37,12 @@ python3 test_inter.py --file="<path to the video file>" --fr_rate=<some positive
 **How to use:** Install Python dependencies from requirements.txt and run the inference scripts against the included sample media.
 
 **Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.
+
+## Current Layout
+
+- `src/bosch_age_gender/` - reusable Python inference and video utility scripts.
+- `notebooks/` - exploratory Inter-IIT notebook.
+- `models/` - retained model/checkpoint artifacts and expected location for Caffe/body2gender models.
+- `media/samples/` - sample videos used by demos.
+- `outputs/` - generated CSV outputs at runtime; ignored by Git.
+

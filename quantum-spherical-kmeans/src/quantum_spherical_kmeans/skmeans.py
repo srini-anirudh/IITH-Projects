@@ -3,7 +3,7 @@ import random
 from scipy.sparse import issparse
 from numpy.linalg.linalg import norm
 from numpy.random import randint
-from distance_metric import *
+from quantum_spherical_kmeans.distance_metric import *
 
 
 class SKMeans:

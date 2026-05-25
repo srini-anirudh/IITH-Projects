@@ -1,4 +1,6 @@
-from skmeans import SKMeans
+from pathlib import Path
+
+from quantum_spherical_kmeans.skmeans import SKMeans
 import numpy as np
 import matplotlib.pyplot as plt
 from tqdm import tqdm
@@ -13,6 +15,9 @@ parser.add_argument("--random_state", type=int, default=1)
 parser.add_argument("--scatter_plot", action="store_true")
 parser.add_argument("--contour_plot", action="store_true")
 args = parser.parse_args()
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+FIGURES_DIR = PROJECT_ROOT / "figures"
+FIGURES_DIR.mkdir(exist_ok=True)
 
 X, y = make_blobs(
     n_samples=1000, n_features=2, centers=3, cluster_std=2.0, random_state=42
@@ -54,7 +59,7 @@ if args.scatter_plot:
         plt.title(f"Alpha = {a}, Beta = {b} (Accuracy = {accuracy:.2f})")
         idx += 1
 
-    plt.savefig(f"plots/Clusters_linear_combination_{random_state}.png")
+    plt.savefig(FIGURES_DIR / f"Clusters_linear_combination_{random_state}.png")
 
 elif args.contour_plot:
     alpha, beta = np.meshgrid(np.arange(0, 5, 0.25), np.arange(0, 5, 0.25))
@@ -93,4 +98,4 @@ elif args.contour_plot:
     plt.xlabel("Alpha")
     plt.ylabel("Beta")
     plt.title(f"Contour Plot of Accuracy for Random State = {random_state}")
-    plt.savefig(f"plots/Contour_linear_combination_{random_state}.png")
+    plt.savefig(FIGURES_DIR / f"Contour_linear_combination_{random_state}.png")

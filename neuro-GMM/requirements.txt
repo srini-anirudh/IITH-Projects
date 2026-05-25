@@ -1,0 +1,6 @@
+tensorflow=2.0
+tensorflow_probability
+scikit-learn
+deap
+numpy
+matplotlib

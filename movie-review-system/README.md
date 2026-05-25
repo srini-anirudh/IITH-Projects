@@ -26,3 +26,12 @@ This system offers user empowerment through the ability to express opinions and 
 **How to use:** Use backend/pyproject.toml for the API, frontend/package.json for the UI, and ML module READMEs for model utilities.
 
 **Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.
+
+## Current Layout
+
+- `backend/` - API/backend service.
+- `frontend/` - web frontend.
+- `ml/` - sentiment and summarization modules.
+- `research/` - scraping and EDA notebooks/scripts.
+- `docs/` - report and presentation deliverables.
+

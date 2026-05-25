@@ -1,0 +1,18 @@
+//Testing variable declarations, single line comments, multi returning
+begin class cls
+     int num1=2;
+     int num2=5;
+   public:
+     begin function get_diff_and_prod()->(int, int)
+       return (num2-num1, num1*num2);
+     end function get_diff_and_prod
+end class cls;
+begin function main()->(int)
+  bigint var1= 23I;
+  charseq strng="Lucas Parser";
+  int diff, prod;
+  cls obj;
+  (diff, prod)=obj.get_diff_and_prod();
+  print("This is our "+strng+"\n");
+  return 0;
+end function main

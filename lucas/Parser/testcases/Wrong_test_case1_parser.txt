@@ -1,0 +1,11 @@
+begin function main()->(int)
+  int num;
+  num=2+4*3-1%2;
+  begin while[Label1](1)
+    num>>=1; // Our language does not support right shift or left shift operators as we use bigint and hence this throws an error.
+    begin if[Label2](num<=0)
+      break Label1;
+    end if//Its optional to mention label here
+  end while Label1
+  return 0;
+end function main

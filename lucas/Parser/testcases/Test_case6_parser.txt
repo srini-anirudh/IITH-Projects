@@ -1,0 +1,20 @@
+//Testing Classes 
+
+decl class Triangle
+    int a;
+    int b;
+    int c;
+    
+    int A;
+    int B;
+    int C;
+public:
+    begin function get_lengths() -> (int,int,int)
+        return (a,b,c);
+    end function get_lengths
+
+    begin function sum_angles() -> (int)
+        return A+B+C;
+    end function get_angles
+
+    

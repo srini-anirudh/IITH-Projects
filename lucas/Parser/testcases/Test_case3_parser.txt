@@ -1,0 +1,15 @@
+//Testing related to math(assignment, preincrement, postincrement, mathematical functions)
+begin function main()->(int)
+  int num=20;
+  int a=num++;
+  int b=--num;
+  num%=3;
+  expr e.var='x';
+  e=1*x^2+2*x+3;
+  expr e_int=e.intg();
+  expr e_dif=e.dif();
+  int def_int=e.intg(2,8);
+  read(num);
+  int slope=e_dif(num);
+  return 0;
+end function main

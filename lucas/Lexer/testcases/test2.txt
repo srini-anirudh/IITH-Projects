@@ -1,0 +1,4 @@
+bigint bg23 = 4500000e23;
+double var423 = 145e-2;
+char ch = 'c';
+chair = log(sin(x));

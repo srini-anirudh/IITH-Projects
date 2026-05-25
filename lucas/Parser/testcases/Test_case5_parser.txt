@@ -1,0 +1,16 @@
+//Testing related to pointers, func decl and func def
+decl function sum(int a, int b)->(int);
+begin function main()->(int)
+  int num1=5;
+  int num2;
+  read(num2);
+  int *p=&num1;
+  *p+=5;
+  int num3=sum(num1, num2);
+    print("sum="+num3+"\n");
+  return 0;
+end function main
+
+begin function sum(int a, int b)->(int)
+  return a+b;
+end function sum

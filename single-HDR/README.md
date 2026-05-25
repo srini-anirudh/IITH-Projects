@@ -82,3 +82,12 @@ Parts of the code in ```hallucination_net.py``` are folked from [HDRCNN](https:/
 **How to use:** Use training_code/README.md and run the Python training/inference scripts from that folder.
 
 **Layout:** Source code, notebooks, datasets, reports, media, and generated assets are kept in their original project-relative folders so existing paths continue to work. Nested Git metadata and local build/cache outputs have been removed for clean monorepo versioning.
+
+## Current Layout
+
+- `src/single_hdr/` - inference/model utility scripts for single-image HDR reconstruction.
+- `training_code/` - original training pipeline and training README.
+- `data/` and `tf_records/` - masks, response curves, and TFRecord inputs.
+- `assets/images/` and `assets/sample-inputs/` - visual assets and examples.
+- `docs/site/` and `docs/website/` - project page assets.
+
